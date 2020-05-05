@@ -18,6 +18,8 @@
 		EA940FC52461F39400DD4C23 /* SelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FC42461F39400DD4C23 /* SelfieViewController.swift */; };
 		EA940FC72461F3A700DD4C23 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FC62461F3A700DD4C23 /* InfoViewController.swift */; };
 		EA940FC92461F9AB00DD4C23 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FC82461F9AB00DD4C23 /* SliderView.swift */; };
+		EA940FCB246214B600DD4C23 /* SliderView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FCA246214B600DD4C23 /* SliderView+Constraints.swift */; };
+		EA940FCD2462156B00DD4C23 /* SliderView+SliderViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FCC2462156B00DD4C23 /* SliderView+SliderViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		EA940FC42461F39400DD4C23 /* SelfieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieViewController.swift; sourceTree = "<group>"; };
 		EA940FC62461F3A700DD4C23 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		EA940FC82461F9AB00DD4C23 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		EA940FCA246214B600DD4C23 /* SliderView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SliderView+Constraints.swift"; sourceTree = "<group>"; };
+		EA940FCC2462156B00DD4C23 /* SliderView+SliderViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SliderView+SliderViewState.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				EA940FC82461F9AB00DD4C23 /* SliderView.swift */,
+				EA940FCC2462156B00DD4C23 /* SliderView+SliderViewState.swift */,
+				EA940FCA246214B600DD4C23 /* SliderView+Constraints.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,10 +268,12 @@
 				EA940FC52461F39400DD4C23 /* SelfieViewController.swift in Sources */,
 				EA940FC92461F9AB00DD4C23 /* SliderView.swift in Sources */,
 				EA940FC22461F30F00DD4C23 /* PPTabBarController.swift in Sources */,
+				EA940FCB246214B600DD4C23 /* SliderView+Constraints.swift in Sources */,
 				EA940F9C2461DD5500DD4C23 /* WardrobeViewController.swift in Sources */,
 				EA940FC72461F3A700DD4C23 /* InfoViewController.swift in Sources */,
 				EA940F982461DD5500DD4C23 /* AppDelegate.swift in Sources */,
 				EA940F9A2461DD5500DD4C23 /* SceneDelegate.swift in Sources */,
+				EA940FCD2462156B00DD4C23 /* SliderView+SliderViewState.swift in Sources */,
 				EA940FBA2461E9B800DD4C23 /* WardrobeViewController+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

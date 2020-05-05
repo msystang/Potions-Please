@@ -12,9 +12,7 @@ class SliderView: UIView {
     
     var chevronImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "minus")
-//        imageView.image = UIImage(systemName: "chevron.compact.down")
-//        imageView.image = UIImage(systemName: "chevron.compact.up")
+        imageView.isUserInteractionEnabled = true
         return imageView
     }()
     
@@ -31,6 +29,8 @@ class SliderView: UIView {
         return view
     }()
     
+    var sliderViewState: SliderViewState = .half
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -38,56 +38,42 @@ class SliderView: UIView {
         
         addSubViews()
         addConstraints()
+        setChevronImage(state: sliderViewState)
+        
+        loadChevronGestures()
     }
     
     required init?(coder: NSCoder) {
           fatalError("init(coder:) has not been implemented")
     }
     
-    func addSubViews() {
-        self.addSubview(chevronImageView)
-        self.addSubview(typeCollectionView)
-        self.addSubview(itemCollectionView)
-    }
-    
-    func addConstraints() {
-        setChevronImageViewConstraints()
-        setTypeCollectionViewConstraints()
-        setItemCollectionViewConstraints()
-    }
-    
-    func setChevronImageViewConstraints() {
-        chevronImageView.translatesAutoresizingMaskIntoConstraints = false
+    func setChevronImage(state: SliderViewState) {
+        switch state {
+        case .opened:
+            self.chevronImageView.image = UIImage(systemName: "chevron.compact.down")
+        case .half:
+            self.chevronImageView.image = UIImage(systemName: "minus")
+        case .collapsed:
+            self.chevronImageView.image = UIImage(systemName: "chevron.compact.up")
+        }
         
-        NSLayoutConstraint.activate([
-            chevronImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            chevronImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 5),
-            chevronImageView.widthAnchor.constraint(equalToConstant: 50),
-            chevronImageView.heightAnchor.constraint(equalToConstant: 30)
-        ])
     }
     
-    func setTypeCollectionViewConstraints() {
-        typeCollectionView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            typeCollectionView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            typeCollectionView.leftAnchor.constraint(equalTo: self.leftAnchor),
-            typeCollectionView.topAnchor.constraint(equalTo: chevronImageView.bottomAnchor, constant: 5),
-            typeCollectionView.heightAnchor.constraint(equalToConstant: 50)
-        ])
-    }
+    func loadChevronGestures() {
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(gesturePerformed(gesture:)))
+        swipeDown.direction = .down
     
-    func setItemCollectionViewConstraints() {
-        itemCollectionView.translatesAutoresizingMaskIntoConstraints = false
+        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(gesturePerformed(gesture:)))
+        swipeUp.direction = .up
         
-        NSLayoutConstraint.activate([
-            itemCollectionView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            itemCollectionView.leftAnchor.constraint(equalTo: self.leftAnchor),
-            itemCollectionView.topAnchor.constraint(equalTo: typeCollectionView.bottomAnchor),
-            itemCollectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
-        ])
+        let tapped = UITapGestureRecognizer(target: self, action: #selector(gesturePerformed(gesture:)))
+        
+        self.chevronImageView.addGestureRecognizer(swipeDown)
+        self.chevronImageView.addGestureRecognizer(swipeUp)
+        self.chevronImageView.addGestureRecognizer(tapped)
     }
 
-
+    @objc func gesturePerformed(gesture: UIGestureRecognizer) {
+        print(gesture)
+    }
 }
