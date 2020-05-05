@@ -14,6 +14,9 @@
 		EA940FA42461DD5600DD4C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA940FA22461DD5600DD4C23 /* LaunchScreen.storyboard */; };
 		EA940FAF2461DD5600DD4C23 /* Potions_PleaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FAE2461DD5600DD4C23 /* Potions_PleaseTests.swift */; };
 		EA940FBA2461E9B800DD4C23 /* WardrobeViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FB92461E9B800DD4C23 /* WardrobeViewController+Constraints.swift */; };
+		EA940FC22461F30F00DD4C23 /* PPTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FC12461F30F00DD4C23 /* PPTabBarController.swift */; };
+		EA940FC52461F39400DD4C23 /* SelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FC42461F39400DD4C23 /* SelfieViewController.swift */; };
+		EA940FC72461F3A700DD4C23 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FC62461F3A700DD4C23 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		EA940FAE2461DD5600DD4C23 /* Potions_PleaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potions_PleaseTests.swift; sourceTree = "<group>"; };
 		EA940FB02461DD5600DD4C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA940FB92461E9B800DD4C23 /* WardrobeViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WardrobeViewController+Constraints.swift"; sourceTree = "<group>"; };
+		EA940FC12461F30F00DD4C23 /* PPTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPTabBarController.swift; sourceTree = "<group>"; };
+		EA940FC42461F39400DD4C23 /* SelfieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieViewController.swift; sourceTree = "<group>"; };
+		EA940FC62461F3A700DD4C23 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +85,11 @@
 		EA940F962461DD5500DD4C23 /* Potions-Please */ = {
 			isa = PBXGroup;
 			children = (
-				EA940F972461DD5500DD4C23 /* AppDelegate.swift */,
-				EA940F992461DD5500DD4C23 /* SceneDelegate.swift */,
-				EA940F9B2461DD5500DD4C23 /* WardrobeViewController.swift */,
-				EA940FB92461E9B800DD4C23 /* WardrobeViewController+Constraints.swift */,
-				EA940FA02461DD5600DD4C23 /* Assets.xcassets */,
-				EA940FA22461DD5600DD4C23 /* LaunchScreen.storyboard */,
+				EA940FC02461F22200DD4C23 /* App Lifecycle */,
+				EA940FBC2461F1F700DD4C23 /* Models */,
+				EA940FBD2461F1FE00DD4C23 /* Controllers */,
+				EA940FBE2461F20D00DD4C23 /* Views */,
+				EA940FBF2461F21600DD4C23 /* Supporting Files */,
 				EA940FA52461DD5600DD4C23 /* Info.plist */,
 			);
 			path = "Potions-Please";
@@ -97,6 +102,58 @@
 				EA940FB02461DD5600DD4C23 /* Info.plist */,
 			);
 			path = "Potions-PleaseTests";
+			sourceTree = "<group>";
+		};
+		EA940FBB2461F1ED00DD4C23 /* WardrobeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA940F9B2461DD5500DD4C23 /* WardrobeViewController.swift */,
+				EA940FB92461E9B800DD4C23 /* WardrobeViewController+Constraints.swift */,
+			);
+			path = WardrobeViewController;
+			sourceTree = "<group>";
+		};
+		EA940FBC2461F1F700DD4C23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA940FBD2461F1FE00DD4C23 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA940FC12461F30F00DD4C23 /* PPTabBarController.swift */,
+				EA940FBB2461F1ED00DD4C23 /* WardrobeViewController */,
+				EA940FC42461F39400DD4C23 /* SelfieViewController.swift */,
+				EA940FC62461F3A700DD4C23 /* InfoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EA940FBE2461F20D00DD4C23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA940FBF2461F21600DD4C23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA940FA02461DD5600DD4C23 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA940FC02461F22200DD4C23 /* App Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				EA940FA22461DD5600DD4C23 /* LaunchScreen.storyboard */,
+				EA940F972461DD5500DD4C23 /* AppDelegate.swift */,
+				EA940F992461DD5500DD4C23 /* SceneDelegate.swift */,
+			);
+			path = "App Lifecycle";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +256,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA940FC52461F39400DD4C23 /* SelfieViewController.swift in Sources */,
+				EA940FC22461F30F00DD4C23 /* PPTabBarController.swift in Sources */,
 				EA940F9C2461DD5500DD4C23 /* WardrobeViewController.swift in Sources */,
+				EA940FC72461F3A700DD4C23 /* InfoViewController.swift in Sources */,
 				EA940F982461DD5500DD4C23 /* AppDelegate.swift in Sources */,
 				EA940F9A2461DD5500DD4C23 /* SceneDelegate.swift in Sources */,
 				EA940FBA2461E9B800DD4C23 /* WardrobeViewController+Constraints.swift in Sources */,
