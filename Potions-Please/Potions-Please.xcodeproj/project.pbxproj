@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		EA940F982461DD5500DD4C23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940F972461DD5500DD4C23 /* AppDelegate.swift */; };
 		EA940F9A2461DD5500DD4C23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940F992461DD5500DD4C23 /* SceneDelegate.swift */; };
-		EA940F9C2461DD5500DD4C23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940F9B2461DD5500DD4C23 /* ViewController.swift */; };
+		EA940F9C2461DD5500DD4C23 /* WardrobeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940F9B2461DD5500DD4C23 /* WardrobeViewController.swift */; };
 		EA940FA12461DD5600DD4C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA940FA02461DD5600DD4C23 /* Assets.xcassets */; };
 		EA940FA42461DD5600DD4C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA940FA22461DD5600DD4C23 /* LaunchScreen.storyboard */; };
 		EA940FAF2461DD5600DD4C23 /* Potions_PleaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FAE2461DD5600DD4C23 /* Potions_PleaseTests.swift */; };
+		EA940FBA2461E9B800DD4C23 /* WardrobeViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FB92461E9B800DD4C23 /* WardrobeViewController+Constraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		EA940F942461DD5500DD4C23 /* Potions-Please.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Potions-Please.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA940F972461DD5500DD4C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA940F992461DD5500DD4C23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA940F9B2461DD5500DD4C23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA940F9B2461DD5500DD4C23 /* WardrobeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeViewController.swift; sourceTree = "<group>"; };
 		EA940FA02461DD5600DD4C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA940FA32461DD5600DD4C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA940FA52461DD5600DD4C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA940FAA2461DD5600DD4C23 /* Potions-PleaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Potions-PleaseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA940FAE2461DD5600DD4C23 /* Potions_PleaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potions_PleaseTests.swift; sourceTree = "<group>"; };
 		EA940FB02461DD5600DD4C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA940FB92461E9B800DD4C23 /* WardrobeViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WardrobeViewController+Constraints.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,8 @@
 			children = (
 				EA940F972461DD5500DD4C23 /* AppDelegate.swift */,
 				EA940F992461DD5500DD4C23 /* SceneDelegate.swift */,
-				EA940F9B2461DD5500DD4C23 /* ViewController.swift */,
+				EA940F9B2461DD5500DD4C23 /* WardrobeViewController.swift */,
+				EA940FB92461E9B800DD4C23 /* WardrobeViewController+Constraints.swift */,
 				EA940FA02461DD5600DD4C23 /* Assets.xcassets */,
 				EA940FA22461DD5600DD4C23 /* LaunchScreen.storyboard */,
 				EA940FA52461DD5600DD4C23 /* Info.plist */,
@@ -196,9 +199,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA940F9C2461DD5500DD4C23 /* ViewController.swift in Sources */,
+				EA940F9C2461DD5500DD4C23 /* WardrobeViewController.swift in Sources */,
 				EA940F982461DD5500DD4C23 /* AppDelegate.swift in Sources */,
 				EA940F9A2461DD5500DD4C23 /* SceneDelegate.swift in Sources */,
+				EA940FBA2461E9B800DD4C23 /* WardrobeViewController+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
