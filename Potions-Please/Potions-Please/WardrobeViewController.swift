@@ -8,11 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WardrobeViewController: UIViewController {
 
+    var wardrobeImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.backgroundColor = .red
+        return imageView
+    }()
+    
+    var sliderView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .green
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .yellow
+        
+        addSubviews()
+        addConstraints()
+        
     }
 
 
