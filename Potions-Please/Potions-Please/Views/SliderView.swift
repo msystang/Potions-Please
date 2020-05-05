@@ -29,7 +29,13 @@ class SliderView: UIView {
         return view
     }()
     
-    var sliderViewState: SliderViewState = .half
+    var currentSliderViewState: SliderViewState = .half {
+        didSet {
+            self.setChevronImage(state: currentSliderViewState)
+            // update constraints here
+            self.layoutIfNeeded()
+        }
+    }
     
     
     override init(frame: CGRect) {
@@ -38,7 +44,7 @@ class SliderView: UIView {
         
         addSubViews()
         addConstraints()
-        setChevronImage(state: sliderViewState)
+        setChevronImage(state: currentSliderViewState)
         
         loadChevronGestures()
     }
@@ -75,5 +81,65 @@ class SliderView: UIView {
 
     @objc func gesturePerformed(gesture: UIGestureRecognizer) {
         print(gesture)
+        
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            switch swipeGesture.direction {
+            case .down:
+                self.swipeDown(for: currentSliderViewState)
+            case .up:
+                self.swipeUp(for: currentSliderViewState)
+            default:
+                return
+            }
+        }
+        
+        
     }
+        
+    func swipeDown(for state: SliderViewState) {
+        UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: 0.80, initialSpringVelocity: 0, options: .curveEaseInOut, animations: { [weak self] in
+            
+            switch self?.currentSliderViewState {
+            case .opened:
+                self?.currentSliderViewState = .half
+                print("slider is now at half")
+            case .half:
+                self?.currentSliderViewState = .collapsed
+                print("slider is now collapsed")
+            case .collapsed:
+                print("slider is already collapsed")
+                return
+            default:
+                return
+            }
+            
+        }, completion: nil)
+    }
+    
+    func swipeUp(for state: SliderViewState) {
+        UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: 0.80, initialSpringVelocity: 0, options: .curveEaseInOut, animations: { [weak self] in
+            
+            switch self?.currentSliderViewState {
+            case .opened:
+                print("slider is already opened")
+                return
+            case .half:
+                self?.currentSliderViewState = .opened
+                print("slider is now opened")
+            case .collapsed:
+                self?.currentSliderViewState = .half
+                print("slider is half opened")
+            default:
+                return
+            }
+            
+        }, completion: nil)
+    }
+    
+    func tapped(for state: SliderViewState) {
+        // TODO: Switch between states
+        // TODO: rename half to partial state
+    }
+
 }
+
