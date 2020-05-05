@@ -16,11 +16,7 @@ class WardrobeViewController: UIViewController {
         return imageView
     }()
     
-    var sliderView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .green
-        return view
-    }()
+    var sliderView = SliderView()
     
     override func viewDidLoad() {
         super.viewDidLoad()

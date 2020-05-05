@@ -17,6 +17,7 @@
 		EA940FC22461F30F00DD4C23 /* PPTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FC12461F30F00DD4C23 /* PPTabBarController.swift */; };
 		EA940FC52461F39400DD4C23 /* SelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FC42461F39400DD4C23 /* SelfieViewController.swift */; };
 		EA940FC72461F3A700DD4C23 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FC62461F3A700DD4C23 /* InfoViewController.swift */; };
+		EA940FC92461F9AB00DD4C23 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FC82461F9AB00DD4C23 /* SliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		EA940FC12461F30F00DD4C23 /* PPTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPTabBarController.swift; sourceTree = "<group>"; };
 		EA940FC42461F39400DD4C23 /* SelfieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieViewController.swift; sourceTree = "<group>"; };
 		EA940FC62461F3A700DD4C23 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		EA940FC82461F9AB00DD4C23 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		EA940FBE2461F20D00DD4C23 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EA940FC82461F9AB00DD4C23 /* SliderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA940FC52461F39400DD4C23 /* SelfieViewController.swift in Sources */,
+				EA940FC92461F9AB00DD4C23 /* SliderView.swift in Sources */,
 				EA940FC22461F30F00DD4C23 /* PPTabBarController.swift in Sources */,
 				EA940F9C2461DD5500DD4C23 /* WardrobeViewController.swift in Sources */,
 				EA940FC72461F3A700DD4C23 /* InfoViewController.swift in Sources */,
