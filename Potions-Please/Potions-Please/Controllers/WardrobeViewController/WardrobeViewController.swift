@@ -32,12 +32,14 @@ class WardrobeViewController: UIViewController {
     
     var sliderView = SliderView()
     
+    lazy var sliderOpenedHeightConstraint: NSLayoutConstraint = self.sliderView.heightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.8)
+    lazy var sliderPartialHeightConstraint:NSLayoutConstraint = self.sliderView.heightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3)
+    lazy var sliderCollapsedHeightConstraint:NSLayoutConstraint = self.sliderView.heightAnchor.constraint(equalToConstant: 50)
     
     var currentSliderViewState: SliderViewState = .partial {
         didSet {
             self.setChevronImage(state: currentSliderViewState)
-            // update constraints here
-            self.view.layoutIfNeeded()
+            self.updateSliderConstraints(state: currentSliderViewState)
         }
     }
     
@@ -140,7 +142,26 @@ class WardrobeViewController: UIViewController {
         // TODO: Switch between states
         // TODO: rename half to partial state
     }
-
+    
+    
+    func updateSliderConstraints(state: SliderViewState) {
+        switch state {
+        case .opened:
+            self.sliderOpenedHeightConstraint.isActive = true
+            self.sliderPartialHeightConstraint.isActive = false
+            self.sliderCollapsedHeightConstraint.isActive = false
+        case .partial:
+            self.sliderOpenedHeightConstraint.isActive = false
+            self.sliderPartialHeightConstraint.isActive = true
+            self.sliderCollapsedHeightConstraint.isActive = false
+        case .collapsed:
+            self.sliderOpenedHeightConstraint.isActive = false
+            self.sliderPartialHeightConstraint.isActive = false
+            self.sliderCollapsedHeightConstraint.isActive = true
+        }
+        
+        self.view.layoutIfNeeded()
+    }
     
     
 }
