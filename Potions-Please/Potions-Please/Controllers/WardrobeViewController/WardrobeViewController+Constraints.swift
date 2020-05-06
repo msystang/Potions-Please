@@ -13,11 +13,15 @@ extension WardrobeViewController {
     func addSubviews() {
         self.view.addSubview(wardrobeImageView)
         self.view.addSubview(sliderView)
+        self.view.addSubview(gestureView)
+        self.gestureView.addSubview(chevronImageView)
     }
     
     func addConstraints() {
         setWardrobeImageViewConstraints()
         setSliderViewConstraints()
+        setGestureViewConstraints()
+        setChevronImageViewConstraints()
     }
     
     func setWardrobeImageViewConstraints() {
@@ -39,6 +43,28 @@ extension WardrobeViewController {
             sliderView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor),
             sliderView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
             sliderView.heightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3)
+        ])
+    }
+    
+    func setGestureViewConstraints() {
+        gestureView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            gestureView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
+            gestureView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
+            gestureView.bottomAnchor.constraint(equalTo: sliderView.topAnchor),
+            gestureView.heightAnchor.constraint(equalToConstant: 50)
+        ])
+    }
+    
+    func setChevronImageViewConstraints() {
+        chevronImageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            chevronImageView.centerXAnchor.constraint(equalTo: gestureView.centerXAnchor),
+            chevronImageView.centerYAnchor.constraint(equalTo: gestureView.centerYAnchor),
+            chevronImageView.heightAnchor.constraint(equalToConstant: 40),
+            chevronImageView.widthAnchor.constraint(equalToConstant: 40)
         ])
     }
     

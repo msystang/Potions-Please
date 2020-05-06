@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension SliderView {
+extension WardrobeViewController {
     
     enum SliderViewState {
         case opened
