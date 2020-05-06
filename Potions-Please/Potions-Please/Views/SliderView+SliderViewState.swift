@@ -12,7 +12,7 @@ extension SliderView {
     
     enum SliderViewState {
         case opened
-        case half
+        case partial
         case collapsed
     }
     

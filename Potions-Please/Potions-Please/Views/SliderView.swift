@@ -29,7 +29,7 @@ class SliderView: UIView {
         return view
     }()
     
-    var currentSliderViewState: SliderViewState = .half {
+    var currentSliderViewState: SliderViewState = .partial {
         didSet {
             self.setChevronImage(state: currentSliderViewState)
             // update constraints here
@@ -57,7 +57,7 @@ class SliderView: UIView {
         switch state {
         case .opened:
             self.chevronImageView.image = UIImage(systemName: "chevron.compact.down")
-        case .half:
+        case .partial:
             self.chevronImageView.image = UIImage(systemName: "minus")
         case .collapsed:
             self.chevronImageView.image = UIImage(systemName: "chevron.compact.up")
@@ -101,9 +101,9 @@ class SliderView: UIView {
             
             switch self?.currentSliderViewState {
             case .opened:
-                self?.currentSliderViewState = .half
+                self?.currentSliderViewState = .partial
                 print("slider is now at half")
-            case .half:
+            case .partial:
                 self?.currentSliderViewState = .collapsed
                 print("slider is now collapsed")
             case .collapsed:
@@ -123,11 +123,11 @@ class SliderView: UIView {
             case .opened:
                 print("slider is already opened")
                 return
-            case .half:
+            case .partial:
                 self?.currentSliderViewState = .opened
                 print("slider is now opened")
             case .collapsed:
-                self?.currentSliderViewState = .half
+                self?.currentSliderViewState = .partial
                 print("slider is half opened")
             default:
                 return
