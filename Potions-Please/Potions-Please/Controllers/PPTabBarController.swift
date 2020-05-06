@@ -9,11 +9,13 @@
 import UIKit
 
 class PPTabBarController: UITabBarController {
-
+    
+    // MARK: - Internal Properties
     var wardrobeVC = WardrobeViewController()
     var selfieVC = SelfieViewController()
     var infoVC = InfoViewController()
     
+    // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
 

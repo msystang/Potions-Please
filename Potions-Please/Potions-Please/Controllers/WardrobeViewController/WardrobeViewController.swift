@@ -10,7 +10,7 @@ import UIKit
 
 class WardrobeViewController: UIViewController {
     
-    // TODO: Create view for chevron to expand gesture surface
+    // MARK: - UI Properties
     var gestureView: UIView = {
         let view = UIView()
         view.backgroundColor = .yellow
@@ -32,10 +32,11 @@ class WardrobeViewController: UIViewController {
     
     var sliderView = SliderView()
     
-    lazy var sliderOpenedHeightConstraint: NSLayoutConstraint = self.sliderView.heightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.8)
-    lazy var sliderPartialHeightConstraint:NSLayoutConstraint = self.sliderView.heightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3)
-    lazy var sliderCollapsedHeightConstraint:NSLayoutConstraint = self.sliderView.heightAnchor.constraint(equalToConstant: 50)
+    lazy var sliderOpenedHeightConstraint: NSLayoutConstraint = sliderView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.8)
+    lazy var sliderPartialHeightConstraint:NSLayoutConstraint = sliderView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3)
+    lazy var sliderCollapsedHeightConstraint:NSLayoutConstraint = sliderView.heightAnchor.constraint(equalToConstant: 50)
     
+    // MARK: - Internal Properties
     var currentSliderViewState: SliderViewState = .partial {
         didSet {
             self.setChevronImage(state: currentSliderViewState)
@@ -43,6 +44,7 @@ class WardrobeViewController: UIViewController {
         }
     }
     
+    // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .yellow

@@ -10,6 +10,7 @@ import UIKit
 
 class SliderView: UIView {
     
+    // MARK: - UI Properties
     //TODO: Replace with collectionViews, use Views for testing
     var typeCollectionView: UIView = {
         let view = UIView()
@@ -23,15 +24,13 @@ class SliderView: UIView {
         return view
     }()
     
-    
+    // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .green
         
         addSubViews()
         addConstraints()
-        
-        
     }
     
     required init?(coder: NSCoder) {

@@ -9,7 +9,7 @@
 import UIKit
 
 extension SliderView {
-    
+    // MARK: - Internal Methods
     func addSubViews() {
         self.addSubview(typeCollectionView)
         self.addSubview(itemCollectionView)
@@ -20,7 +20,8 @@ extension SliderView {
         setItemCollectionViewConstraints()
     }
     
-    func setTypeCollectionViewConstraints() {
+    // MARK: - Private Methods
+    private func setTypeCollectionViewConstraints() {
         typeCollectionView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -31,7 +32,7 @@ extension SliderView {
         ])
     }
     
-    func setItemCollectionViewConstraints() {
+    private func setItemCollectionViewConstraints() {
         itemCollectionView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([

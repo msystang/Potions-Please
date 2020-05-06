@@ -9,7 +9,7 @@
 import UIKit
 
 extension WardrobeViewController {
-    
+    // MARK: - Internal Methods
     func addSubviews() {
         self.view.addSubview(wardrobeImageView)
         self.view.addSubview(sliderView)
@@ -24,7 +24,8 @@ extension WardrobeViewController {
         setChevronImageViewConstraints()
     }
     
-    func setWardrobeImageViewConstraints() {
+    // MARK: - Private Methods
+    private func setWardrobeImageViewConstraints() {
         wardrobeImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -35,7 +36,7 @@ extension WardrobeViewController {
         ])
     }
     
-    func setSliderViewConstraints() {
+    private func setSliderViewConstraints() {
         sliderView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -46,7 +47,7 @@ extension WardrobeViewController {
         ])
     }
     
-    func setGestureViewConstraints() {
+    private func setGestureViewConstraints() {
         gestureView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -57,7 +58,7 @@ extension WardrobeViewController {
         ])
     }
     
-    func setChevronImageViewConstraints() {
+    private func setChevronImageViewConstraints() {
         chevronImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
