@@ -11,23 +11,12 @@ import UIKit
 class WardrobeViewController: UIViewController {
     
     // MARK: - UI Properties
-    var backgroundImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "bkgd-all")
-        imageView.contentMode = .scaleAspectFill
-        return imageView
-    }()
+    var dollView = DollView()
     
     var gestureView: UIView = {
         let view = UIView()
         view.backgroundColor = .yellow
         return view
-    }()
-    
-    var wardrobeImageView: UIImageView = {
-        let imageView = UIImageView()
-//        imageView.backgroundColor = .gray
-        return imageView
     }()
     
     var chevronImageView: UIImageView = {
