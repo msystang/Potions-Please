@@ -37,12 +37,18 @@ class SliderView: UIView {
         
         addSubViews()
         addConstraints()
+        
+        addShadow()
     }
     
     required init?(coder: NSCoder) {
           fatalError("init(coder:) has not been implemented")
     }
     
-    
+    private func addShadow() {
+        self.layer.shadowColor = CGColor(srgbRed: 188/255, green: 175/255, blue: 209/255, alpha: 1)
+        self.layer.shadowRadius = 20
+        self.layer.shadowOpacity = 1
+    }
 }
 
