@@ -11,6 +11,7 @@ import UIKit
 extension WardrobeViewController {
     // MARK: - Internal Methods
     func addSubviews() {
+        self.view.addSubview(backgroundImageView)
         self.view.addSubview(wardrobeImageView)
         self.view.addSubview(sliderView)
         self.view.addSubview(gestureView)
@@ -18,6 +19,7 @@ extension WardrobeViewController {
     }
     
     func addConstraints() {
+        setBackgroundImageViewConstraints()
         setWardrobeImageViewConstraints()
         setSliderViewConstraints()
         setGestureViewConstraints()
@@ -25,6 +27,17 @@ extension WardrobeViewController {
     }
     
     // MARK: - Private Methods
+    private func setBackgroundImageViewConstraints() {
+        backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            backgroundImageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            backgroundImageView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            backgroundImageView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            backgroundImageView.leftAnchor.constraint(equalTo: self.view.leftAnchor)
+        ])
+    }
+    
     private func setWardrobeImageViewConstraints() {
         wardrobeImageView.translatesAutoresizingMaskIntoConstraints = false
         

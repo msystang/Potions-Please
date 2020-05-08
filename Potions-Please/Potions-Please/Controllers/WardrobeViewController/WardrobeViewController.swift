@@ -11,6 +11,13 @@ import UIKit
 class WardrobeViewController: UIViewController {
     
     // MARK: - UI Properties
+    var backgroundImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "bkgd-all")
+        imageView.contentMode = .scaleAspectFill
+        return imageView
+    }()
+    
     var gestureView: UIView = {
         let view = UIView()
         view.backgroundColor = .yellow
@@ -19,7 +26,7 @@ class WardrobeViewController: UIViewController {
     
     var wardrobeImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .gray
+//        imageView.backgroundColor = .gray
         return imageView
     }()
     
@@ -57,6 +64,7 @@ class WardrobeViewController: UIViewController {
         
         setUpCollectionView(collectionView: sliderView.typeCollectionView)
         setUpCollectionView(collectionView: sliderView.itemCollectionView)
+        
     }
 
 }
