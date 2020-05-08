@@ -23,6 +23,7 @@
 		EA940FCF2463804900DD4C23 /* WardrobeViewController+Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FCE2463804900DD4C23 /* WardrobeViewController+Gestures.swift */; };
 		EA940FD12465BD5300DD4C23 /* WardrobeViewController+CollectionViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FD02465BD5300DD4C23 /* WardrobeViewController+CollectionViews.swift */; };
 		EA940FD52465BF8600DD4C23 /* TypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FD42465BF8600DD4C23 /* TypeCollectionViewCell.swift */; };
+		EA940FD72465DA9600DD4C23 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FD62465DA9600DD4C23 /* ItemCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		EA940FCE2463804900DD4C23 /* WardrobeViewController+Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WardrobeViewController+Gestures.swift"; sourceTree = "<group>"; };
 		EA940FD02465BD5300DD4C23 /* WardrobeViewController+CollectionViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WardrobeViewController+CollectionViews.swift"; sourceTree = "<group>"; };
 		EA940FD42465BF8600DD4C23 /* TypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA940FD62465DA9600DD4C23 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			children = (
 				EA940FC82461F9AB00DD4C23 /* SliderView.swift */,
 				EA940FD42465BF8600DD4C23 /* TypeCollectionViewCell.swift */,
+				EA940FD62465DA9600DD4C23 /* ItemCollectionViewCell.swift */,
 				EA940FCA246214B600DD4C23 /* SliderView+Constraints.swift */,
 			);
 			path = Views;
@@ -287,6 +290,7 @@
 				EA940FCD2462156B00DD4C23 /* WardrobeViewController+SliderView.swift in Sources */,
 				EA940FBA2461E9B800DD4C23 /* WardrobeViewController+Constraints.swift in Sources */,
 				EA940FD12465BD5300DD4C23 /* WardrobeViewController+CollectionViews.swift in Sources */,
+				EA940FD72465DA9600DD4C23 /* ItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
