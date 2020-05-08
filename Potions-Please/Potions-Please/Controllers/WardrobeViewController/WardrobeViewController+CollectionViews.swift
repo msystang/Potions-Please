@@ -17,36 +17,56 @@ extension WardrobeViewController {
 
 extension WardrobeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        
+        switch collectionView {
+        case sliderView.typeCollectionView:
+            return 10
+        case sliderView.itemCollectionView:
+            return 20
+        default:
+            return 0
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if collectionView == self.sliderView.typeCollectionView {
+        
+        switch collectionView {
+        case sliderView.typeCollectionView:
             let typeCell = collectionView.dequeueReusableCell(withReuseIdentifier: "typeCell", for: indexPath) as! TypeCollectionViewCell
             
-            
             return typeCell
+        case sliderView.itemCollectionView:
+            let itemCell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as! ItemCollectionViewCell
+            
+            return itemCell
+        default:
+            return UICollectionViewCell()
         }
-        
-        return UICollectionViewCell()
     }
     
 }
 
 extension WardrobeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        
-        // Adds padding to top, left, and right of the collectionView
-        layout.sectionInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5)
-        
-        // Horizontal spacing
-        layout.minimumInteritemSpacing = 5
-        // Vertical spacing
-//        layout.minimumLineSpacing = 30
         layout.invalidateLayout()
         
-        return CGSize(width: 40, height: 40);
+        switch collectionView {
+        case sliderView.typeCollectionView:
+            layout.sectionInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5)
+            layout.minimumInteritemSpacing = 5
+            return CGSize(width: 40, height: 40)
+        case sliderView.itemCollectionView:
+            layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+            layout.minimumInteritemSpacing = 10
+            layout.minimumLineSpacing = 10
+            return CGSize(width: ((self.view.frame.width / 3) - 15), height:((self.view.frame.width / 3) - 15))
+        default:
+            return CGSize(width: 0, height: 0)
+        }
+
     }
     
 }

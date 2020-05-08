@@ -11,7 +11,6 @@ import UIKit
 class SliderView: UIView {
     
     // MARK: - UI Properties
-    //TODO: Replace with collectionViews, use Views for testing
     lazy var typeCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -22,10 +21,13 @@ class SliderView: UIView {
         return collectionView
     }()
     
-    var itemCollectionView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .purple
-        return view
+   lazy var itemCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.register(ItemCollectionViewCell.self, forCellWithReuseIdentifier: "itemCell")
+        collectionView.backgroundColor = .purple
+        return collectionView
     }()
     
     // MARK: - Initializers

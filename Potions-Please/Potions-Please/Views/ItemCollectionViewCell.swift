@@ -1,5 +1,5 @@
 //
-//  TypeCollectionViewCell.swift
+//  ItemCollectionViewCell.swift
 //  Potions-Please
 //
 //  Created by Sunni Tang on 5/8/20.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class TypeCollectionViewCell: UICollectionViewCell {
+class ItemCollectionViewCell: UICollectionViewCell {
     
-    var typeImageView: UIImageView = {
+    var itemImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.isUserInteractionEnabled = true
-        imageView.backgroundColor = .green
+        imageView.backgroundColor = .systemPink
         return imageView
     }()
     
@@ -35,22 +35,23 @@ class TypeCollectionViewCell: UICollectionViewCell {
     }
     
     private func addSubviews() {
-        contentView.addSubview(typeImageView)
+        contentView.addSubview(itemImageView)
     }
     
     private func addConstraints() {
-        setTypeImageViewConstraints()
+        setItemImageViewConstraints()
     }
     
-    private func setTypeImageViewConstraints() {
-        typeImageView.translatesAutoresizingMaskIntoConstraints = false
+    private func setItemImageViewConstraints() {
+        itemImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            typeImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-            typeImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            typeImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor),
-            typeImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            itemImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            itemImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            itemImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor),
+            itemImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
             
         ])
     }
+
 }
