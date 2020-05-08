@@ -12,12 +12,12 @@ extension SliderView {
     // MARK: - Internal Methods
     func addSubViews() {
         self.addSubview(typeCollectionView)
-        self.addSubview(itemCollectionView)
+        self.addSubview(categoryCollectionView)
     }
     
     func addConstraints() {
         setTypeCollectionViewConstraints()
-        setItemCollectionViewConstraints()
+        setCategoryCollectionViewConstraints()
     }
     
     // MARK: - Private Methods
@@ -32,14 +32,14 @@ extension SliderView {
         ])
     }
     
-    private func setItemCollectionViewConstraints() {
-        itemCollectionView.translatesAutoresizingMaskIntoConstraints = false
+    private func setCategoryCollectionViewConstraints() {
+        categoryCollectionView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            itemCollectionView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            itemCollectionView.leftAnchor.constraint(equalTo: self.leftAnchor),
-            itemCollectionView.topAnchor.constraint(equalTo: typeCollectionView.bottomAnchor),
-            itemCollectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
+            categoryCollectionView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            categoryCollectionView.leftAnchor.constraint(equalTo: self.leftAnchor),
+            categoryCollectionView.topAnchor.constraint(equalTo: typeCollectionView.bottomAnchor),
+            categoryCollectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ])
     }
 

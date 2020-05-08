@@ -16,12 +16,12 @@ class SliderView: UIView {
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .systemPink
-        collectionView.register(TypeCollectionViewCell.self, forCellWithReuseIdentifier: "typeCell")
+        collectionView.register(CategoryCollectionViewCell.self, forCellWithReuseIdentifier: "typeCell")
         collectionView.showsHorizontalScrollIndicator = false
         return collectionView
     }()
     
-   lazy var itemCollectionView: UICollectionView = {
+   lazy var categoryCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)

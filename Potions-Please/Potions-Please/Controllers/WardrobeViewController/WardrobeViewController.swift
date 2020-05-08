@@ -53,7 +53,7 @@ class WardrobeViewController: UIViewController {
         loadSliderGestures()
         
         setUpCollectionView(collectionView: sliderView.typeCollectionView)
-        setUpCollectionView(collectionView: sliderView.itemCollectionView)
+        setUpCollectionView(collectionView: sliderView.categoryCollectionView)
         
     }
 

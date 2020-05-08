@@ -1,5 +1,5 @@
 //
-//  TypeCollectionViewCell.swift
+//  CategoryCollectionViewCell.swift
 //  Potions-Please
 //
 //  Created by Sunni Tang on 5/8/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TypeCollectionViewCell: UICollectionViewCell {
+class CategoryCollectionViewCell: UICollectionViewCell {
     
     var typeImageView: UIImageView = {
         let imageView = UIImageView()
