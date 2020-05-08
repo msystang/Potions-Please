@@ -22,7 +22,10 @@ class SliderView: UIView {
     }()
     
    lazy var itemCollectionView: UICollectionView = {
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.register(ItemCollectionViewCell.self, forCellWithReuseIdentifier: "itemCell")
         collectionView.backgroundColor = .purple
         return collectionView
     }()

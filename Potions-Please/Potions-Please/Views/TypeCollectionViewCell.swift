@@ -9,7 +9,6 @@
 import UIKit
 
 class TypeCollectionViewCell: UICollectionViewCell {
-    // MARK: - Initializers
     
     var typeImageView: UIImageView = {
         let imageView = UIImageView()
@@ -18,6 +17,7 @@ class TypeCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
+    // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
         
