@@ -17,15 +17,23 @@ extension WardrobeViewController {
 
 extension WardrobeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView == self.sliderView.typeCollectionView {
+            let typeCell = collectionView.dequeueReusableCell(withReuseIdentifier: "typeCell", for: indexPath) as! TypeCollectionViewCell
+            
+            
+            return typeCell
+        }
+        
         return UICollectionViewCell()
     }
     
 }
 
 extension WardrobeViewController: UICollectionViewDelegateFlowLayout {
+    
     
 }
