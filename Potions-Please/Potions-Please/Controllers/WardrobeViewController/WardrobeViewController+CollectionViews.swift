@@ -34,6 +34,19 @@ extension WardrobeViewController: UICollectionViewDataSource {
 }
 
 extension WardrobeViewController: UICollectionViewDelegateFlowLayout {
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        
+        // Adds padding to top, left, and right of the collectionView
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5)
+        
+        // Horizontal spacing
+        layout.minimumInteritemSpacing = 5
+        // Vertical spacing
+//        layout.minimumLineSpacing = 30
+        layout.invalidateLayout()
+        
+        return CGSize(width: 40, height: 40);
+    }
     
 }
