@@ -15,7 +15,6 @@ class WardrobeViewController: UIViewController {
     
     var gestureView: UIView = {
         let view = UIView()
-        view.backgroundColor = .yellow
         return view
     }()
     
@@ -23,6 +22,8 @@ class WardrobeViewController: UIViewController {
         let imageView = UIImageView()
         imageView.isUserInteractionEnabled = true
         imageView.contentMode = .scaleAspectFit
+        //TODO: Make style struct
+        imageView.tintColor = UIColor(red: 188/255, green: 175/255, blue: 209/255, alpha: 1)
         return imageView
     }()
     
