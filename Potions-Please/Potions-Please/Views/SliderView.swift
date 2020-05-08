@@ -12,10 +12,14 @@ class SliderView: UIView {
     
     // MARK: - UI Properties
     //TODO: Replace with collectionViews, use Views for testing
-    var typeCollectionView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .systemPink
-        return view
+    lazy var typeCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.backgroundColor = .systemPink
+        collectionView.register(TypeCollectionViewCell.self, forCellWithReuseIdentifier: "typeCell")
+        collectionView.showsHorizontalScrollIndicator = false
+        return collectionView
     }()
     
     var itemCollectionView: UIView = {
