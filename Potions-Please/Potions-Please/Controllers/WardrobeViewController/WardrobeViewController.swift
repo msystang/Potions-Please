@@ -52,8 +52,8 @@ class WardrobeViewController: UIViewController {
         setChevronImage(state: currentSliderViewState)
         loadSliderGestures()
         
-        setUpCollectionView(collectionView: sliderView.typeCollectionView)
         setUpCollectionView(collectionView: sliderView.categoryCollectionView)
+        setUpCollectionView(collectionView: sliderView.itemCollectionView)
         
     }
 

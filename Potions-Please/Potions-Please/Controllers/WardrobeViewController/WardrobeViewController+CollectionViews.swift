@@ -19,9 +19,9 @@ extension WardrobeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         switch collectionView {
-        case sliderView.typeCollectionView:
-            return 10
         case sliderView.categoryCollectionView:
+            return 10
+        case sliderView.itemCollectionView:
             return 20
         default:
             return 0
@@ -32,11 +32,11 @@ extension WardrobeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         switch collectionView {
-        case sliderView.typeCollectionView:
+        case sliderView.categoryCollectionView:
             let typeCell = collectionView.dequeueReusableCell(withReuseIdentifier: "typeCell", for: indexPath) as! CategoryCollectionViewCell
             
             return typeCell
-        case sliderView.categoryCollectionView:
+        case sliderView.itemCollectionView:
             let itemCell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as! ItemCollectionViewCell
             
             return itemCell
@@ -54,11 +54,11 @@ extension WardrobeViewController: UICollectionViewDelegateFlowLayout {
         layout.invalidateLayout()
         
         switch collectionView {
-        case sliderView.typeCollectionView:
+        case sliderView.categoryCollectionView:
             layout.sectionInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5)
             layout.minimumInteritemSpacing = 5
             return CGSize(width: 40, height: 40)
-        case sliderView.categoryCollectionView:
+        case sliderView.itemCollectionView:
             layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
             layout.minimumInteritemSpacing = 10
             layout.minimumLineSpacing = 10
