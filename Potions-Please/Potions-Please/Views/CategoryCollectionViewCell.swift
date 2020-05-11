@@ -13,7 +13,8 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     var typeImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.isUserInteractionEnabled = true
-        imageView.backgroundColor = .green
+        imageView.backgroundColor = UIColor(red: 218/255, green: 214/255, blue: 229/255, alpha: 1)
+//        imageView.backgroundColor = UIColor(red: 188/255, green: 175/255, blue: 209/255, alpha: 1)
         return imageView
     }()
     
