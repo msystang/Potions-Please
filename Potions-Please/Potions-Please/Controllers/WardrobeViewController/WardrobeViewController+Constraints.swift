@@ -54,7 +54,7 @@ extension WardrobeViewController {
             gestureView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
             gestureView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
             gestureView.bottomAnchor.constraint(equalTo: sliderView.topAnchor),
-            gestureView.heightAnchor.constraint(equalToConstant: 50)
+            gestureView.heightAnchor.constraint(equalToConstant: 30)
         ])
     }
     
@@ -64,8 +64,8 @@ extension WardrobeViewController {
         NSLayoutConstraint.activate([
             chevronImageView.centerXAnchor.constraint(equalTo: gestureView.centerXAnchor),
             chevronImageView.centerYAnchor.constraint(equalTo: gestureView.centerYAnchor),
-            chevronImageView.heightAnchor.constraint(equalToConstant: 40),
-            chevronImageView.widthAnchor.constraint(equalToConstant: 40)
+            chevronImageView.heightAnchor.constraint(equalTo: gestureView.heightAnchor),
+            chevronImageView.widthAnchor.constraint(equalTo: gestureView.heightAnchor)
         ])
     }
     
