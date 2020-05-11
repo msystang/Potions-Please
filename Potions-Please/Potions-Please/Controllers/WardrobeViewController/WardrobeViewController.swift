@@ -9,19 +9,39 @@
 import UIKit
 
 class WardrobeViewController: UIViewController {
-
-    var wardrobeImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.backgroundColor = .red
-        return imageView
-    }()
     
-    var sliderView: UIView = {
+    // MARK: - UI Properties
+    var dollView = DollView()
+    
+    var gestureView: UIView = {
         let view = UIView()
-        view.backgroundColor = .green
         return view
     }()
     
+    var chevronImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.isUserInteractionEnabled = true
+        imageView.contentMode = .scaleAspectFit
+        //TODO: Make style struct
+        imageView.tintColor = UIColor(red: 188/255, green: 175/255, blue: 209/255, alpha: 1)
+        return imageView
+    }()
+    
+    var sliderView = SliderView()
+    
+    lazy var sliderOpenedHeightConstraint: NSLayoutConstraint = sliderView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.8)
+    lazy var sliderPartialHeightConstraint:NSLayoutConstraint = sliderView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3)
+    lazy var sliderCollapsedHeightConstraint:NSLayoutConstraint = sliderView.heightAnchor.constraint(equalToConstant: 50)
+    
+    // MARK: - Internal Properties
+    var currentSliderViewState: SliderViewState = .partial {
+        didSet {
+            self.setChevronImage(state: currentSliderViewState)
+            self.updateSliderConstraints(state: currentSliderViewState)
+        }
+    }
+    
+    // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .yellow
@@ -29,8 +49,13 @@ class WardrobeViewController: UIViewController {
         addSubviews()
         addConstraints()
         
+        setChevronImage(state: currentSliderViewState)
+        loadSliderGestures()
+        
+        setUpCollectionView(collectionView: sliderView.categoryCollectionView)
+        setUpCollectionView(collectionView: sliderView.itemCollectionView)
+        
     }
-
 
 }
 
