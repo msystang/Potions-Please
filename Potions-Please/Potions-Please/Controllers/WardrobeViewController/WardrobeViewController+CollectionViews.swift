@@ -19,7 +19,7 @@ extension WardrobeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         switch collectionView {
-        case sliderView.typeCollectionView:
+        case sliderView.categoryCollectionView:
             return 10
         case sliderView.itemCollectionView:
             return 20
@@ -32,8 +32,8 @@ extension WardrobeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         switch collectionView {
-        case sliderView.typeCollectionView:
-            let typeCell = collectionView.dequeueReusableCell(withReuseIdentifier: "typeCell", for: indexPath) as! TypeCollectionViewCell
+        case sliderView.categoryCollectionView:
+            let typeCell = collectionView.dequeueReusableCell(withReuseIdentifier: "typeCell", for: indexPath) as! CategoryCollectionViewCell
             
             return typeCell
         case sliderView.itemCollectionView:
@@ -54,7 +54,7 @@ extension WardrobeViewController: UICollectionViewDelegateFlowLayout {
         layout.invalidateLayout()
         
         switch collectionView {
-        case sliderView.typeCollectionView:
+        case sliderView.categoryCollectionView:
             layout.sectionInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5)
             layout.minimumInteritemSpacing = 5
             return CGSize(width: 40, height: 40)
