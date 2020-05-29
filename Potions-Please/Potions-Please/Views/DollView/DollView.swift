@@ -20,6 +20,7 @@ class DollView: UIView {
     
     var baseImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.image = UIImage(named: "rosy")
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
