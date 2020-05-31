@@ -22,7 +22,7 @@ extension WardrobeViewController: UICollectionViewDataSource {
         case sliderView.categoryCollectionView:
             return 10
         case sliderView.itemCollectionView:
-            return 20
+            return items.count
         default:
             return 0
         }
@@ -38,6 +38,10 @@ extension WardrobeViewController: UICollectionViewDataSource {
             return typeCell
         case sliderView.itemCollectionView:
             let itemCell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as! ItemCollectionViewCell
+            
+            let item = items[indexPath.row]
+            
+            itemCell.itemImageView.image = item.image
             
             return itemCell
         default:
