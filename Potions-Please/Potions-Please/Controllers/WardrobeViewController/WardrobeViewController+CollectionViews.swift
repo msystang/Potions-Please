@@ -22,7 +22,7 @@ extension WardrobeViewController: UICollectionViewDataSource {
         case sliderView.categoryCollectionView:
             return 10
         case sliderView.itemCollectionView:
-            return 20
+            return items.count
         default:
             return 0
         }
@@ -39,10 +39,40 @@ extension WardrobeViewController: UICollectionViewDataSource {
         case sliderView.itemCollectionView:
             let itemCell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as! ItemCollectionViewCell
             
+            let item = items[indexPath.row]
+            
+            itemCell.itemImageView.image = item.image
+            
             return itemCell
         default:
             return UICollectionViewCell()
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // Add item image
+        
+        switch collectionView {
+            case sliderView.categoryCollectionView:
+                break
+            case sliderView.itemCollectionView:
+                let item = items[indexPath.row]
+                
+                switch item.type {
+                    case .doll:
+                        dollView.baseImageView.image = item.image
+                    case .hat:
+                        dollView.hatImageView.image = item.image
+                    case .onepiece:
+                        dollView.onePieceImageView.image = item.image
+                    case .shoes:
+                        dollView.shoesImageView.image = item.image
+                }
+            
+            default:
+                break
+        }
+        
     }
     
 }
