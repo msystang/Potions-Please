@@ -26,7 +26,7 @@
 		EA940FD72465DA9600DD4C23 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FD62465DA9600DD4C23 /* ItemCollectionViewCell.swift */; };
 		EA940FDA2465F26800DD4C23 /* DollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FD92465F26800DD4C23 /* DollView.swift */; };
 		EA940FDD2465F3D300DD4C23 /* DollView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FDC2465F3D300DD4C23 /* DollView+Constraints.swift */; };
-		EA94ED8024846F2300FE53FD /* DollItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94ED7F24846F2300FE53FD /* DollItem.swift */; };
+		EA94ED8024846F2300FE53FD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94ED7F24846F2300FE53FD /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,7 @@
 		EA940FD62465DA9600DD4C23 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		EA940FD92465F26800DD4C23 /* DollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollView.swift; sourceTree = "<group>"; };
 		EA940FDC2465F3D300DD4C23 /* DollView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DollView+Constraints.swift"; sourceTree = "<group>"; };
-		EA94ED7F24846F2300FE53FD /* DollItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollItem.swift; sourceTree = "<group>"; };
+		EA94ED7F24846F2300FE53FD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +139,7 @@
 		EA940FBC2461F1F700DD4C23 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EA94ED7F24846F2300FE53FD /* DollItem.swift */,
+				EA94ED7F24846F2300FE53FD /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 				EA940FC22461F30F00DD4C23 /* PPTabBarController.swift in Sources */,
 				EA940FCB246214B600DD4C23 /* SliderView+Constraints.swift in Sources */,
 				EA940FD52465BF8600DD4C23 /* CategoryCollectionViewCell.swift in Sources */,
-				EA94ED8024846F2300FE53FD /* DollItem.swift in Sources */,
+				EA94ED8024846F2300FE53FD /* Item.swift in Sources */,
 				EA940F9C2461DD5500DD4C23 /* WardrobeViewController.swift in Sources */,
 				EA940FC72461F3A700DD4C23 /* InfoViewController.swift in Sources */,
 				EA940FCF2463804900DD4C23 /* WardrobeViewController+Gestures.swift in Sources */,
