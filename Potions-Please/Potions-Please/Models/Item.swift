@@ -14,6 +14,7 @@ struct Item {
     let image: UIImage
     let thumbnailImage: UIImage
     
+    // TODO: Add bkgd images
     // TODO: Deal with force-unwrapped UIImages
     // TODO: Replace thumbnail Images
     static let items: [Item] = [
