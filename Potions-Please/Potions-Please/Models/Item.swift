@@ -14,7 +14,7 @@ struct Item {
     let image: UIImage
     
     // TODO: Deal with force-unwrapped UIImages
-    static let dollItems: [Item] = [
+    static let items: [Item] = [
         Item(name: "Rosy", type: ItemType.doll, image: UIImage(named: "rosy")!),
         Item(name: "Rosy's Hat", type: ItemType.hat, image: UIImage(named: "rosy-hat")!),
         Item(name: "Rosy's One Piece", type: ItemType.onepiece, image: UIImage(named: "rosy-onepiece")!),

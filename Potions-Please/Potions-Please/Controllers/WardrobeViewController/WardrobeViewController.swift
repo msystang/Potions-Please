@@ -41,6 +41,8 @@ class WardrobeViewController: UIViewController {
         }
     }
     
+    var items = Item.items
+    
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
