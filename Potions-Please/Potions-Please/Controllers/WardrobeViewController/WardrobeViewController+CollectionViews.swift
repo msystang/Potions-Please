@@ -50,7 +50,6 @@ extension WardrobeViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // Add item image
         
         switch collectionView {
             case sliderView.categoryCollectionView:
