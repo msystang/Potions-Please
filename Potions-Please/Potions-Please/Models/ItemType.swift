@@ -7,8 +7,11 @@
 //
 
 enum ItemType: String {
-    case doll
+    case bkgd
+    case base
+    case bottom
     case hat
     case onepiece
     case shoes
+    case top
 }
