@@ -17,23 +17,21 @@ class WardrobeViewController: UIViewController {
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
+
+    var dollView = DollView()
+
     
     var gestureView: UIView = {
         let view = UIView()
-        view.backgroundColor = .yellow
         return view
-    }()
-    
-    var wardrobeImageView: UIImageView = {
-        let imageView = UIImageView()
-//        imageView.backgroundColor = .gray
-        return imageView
     }()
     
     var chevronImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.isUserInteractionEnabled = true
         imageView.contentMode = .scaleAspectFit
+        //TODO: Make style struct
+        imageView.tintColor = UIColor(red: 188/255, green: 175/255, blue: 209/255, alpha: 1)
         return imageView
     }()
     
@@ -51,6 +49,8 @@ class WardrobeViewController: UIViewController {
         }
     }
     
+    var items = Item.items
+    
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +62,7 @@ class WardrobeViewController: UIViewController {
         setChevronImage(state: currentSliderViewState)
         loadSliderGestures()
         
-        setUpCollectionView(collectionView: sliderView.typeCollectionView)
+        setUpCollectionView(collectionView: sliderView.categoryCollectionView)
         setUpCollectionView(collectionView: sliderView.itemCollectionView)
         
     }

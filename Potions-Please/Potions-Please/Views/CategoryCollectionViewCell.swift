@@ -1,5 +1,5 @@
 //
-//  TypeCollectionViewCell.swift
+//  CategoryCollectionViewCell.swift
 //  Potions-Please
 //
 //  Created by Sunni Tang on 5/8/20.
@@ -8,12 +8,14 @@
 
 import UIKit
 
-class TypeCollectionViewCell: UICollectionViewCell {
+class CategoryCollectionViewCell: UICollectionViewCell {
     
     var typeImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.isUserInteractionEnabled = true
-        imageView.backgroundColor = .green
+        imageView.contentMode = .scaleAspectFit
+        imageView.backgroundColor = UIColor(red: 218/255, green: 214/255, blue: 229/255, alpha: 1)
+//        imageView.backgroundColor = UIColor(red: 188/255, green: 175/255, blue: 209/255, alpha: 1)
         return imageView
     }()
     
