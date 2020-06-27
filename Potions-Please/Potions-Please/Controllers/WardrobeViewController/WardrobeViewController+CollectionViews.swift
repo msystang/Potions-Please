@@ -41,7 +41,7 @@ extension WardrobeViewController: UICollectionViewDataSource {
             
             let item = items[indexPath.row]
             
-            itemCell.itemImageView.image = item.image
+            itemCell.itemImageView.image = item.thumbnailImage
             
             return itemCell
         default:
