@@ -6,4 +6,9 @@
 //  Copyright © 2020 Sunni Tang. All rights reserved.
 //
 
-import Foundation
+enum ItemType: String {
+    case doll
+    case hat
+    case onepiece
+    case shoes
+}
