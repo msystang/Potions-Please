@@ -58,14 +58,21 @@ extension WardrobeViewController: UICollectionViewDataSource {
                 let item = items[indexPath.row]
                 
                 switch item.type {
-                    case .doll:
+                    case .bkgd:
+                        // TODO: upload bkgd
+                        break
+                    case .base:
                         dollView.baseImageView.image = item.image
+                    case .bottom:
+                        dollView.bottomImageView.image = item.image
                     case .hat:
                         dollView.hatImageView.image = item.image
                     case .onepiece:
                         dollView.onePieceImageView.image = item.image
                     case .shoes:
                         dollView.shoesImageView.image = item.image
+                    case .top:
+                    dollView.topImageView.image = item.image
                 }
             
             default:
