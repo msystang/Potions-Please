@@ -43,7 +43,7 @@ class Item {
         // Bottoms
         Item(name: "Holly's Pants", type: .bottom, image: UIImage(named: "bottom-holly"), thumbnailImage: UIImage(named: "thumbnail-bottom-holly")),
         Item(name: "Iris's Skirt", type: .bottom, image: UIImage(named: "bottom-iris"), thumbnailImage: UIImage(named: "thumbnail-bottom-iris")),
-        Item(name: "Holly's Skirt", type: .bottom, image: UIImage(named: "bottom-holly"), thumbnailImage: UIImage(named: "thumbnail-bottom-holly")),
+        Item(name: "Rosy's Skirt", type: .bottom, image: UIImage(named: "bottom-rosy"), thumbnailImage: UIImage(named: "thumbnail-bottom-rosy")),
         Item(name: "Skye's Pants", type: .bottom, image: UIImage(named: "bottom-skye"), thumbnailImage: UIImage(named: "thumbnail-bottom-skye")),
         
         // Hats
