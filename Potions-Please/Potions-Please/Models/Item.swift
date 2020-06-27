@@ -29,10 +29,3 @@ struct Item {
         Item(name: "Holly's Shoes", type: ItemType.shoes, image: UIImage(named: "holly-shoes")!, thumbnailImage: UIImage(named: "holly-shoes")!)
     ]
 }
-
-enum ItemType: String {
-    case doll
-    case hat
-    case onepiece
-    case shoes
-}

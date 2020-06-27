@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA489C2D2489946F00CF668B /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA489C2C2489946F00CF668B /* ItemType.swift */; };
 		EA940F982461DD5500DD4C23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940F972461DD5500DD4C23 /* AppDelegate.swift */; };
 		EA940F9A2461DD5500DD4C23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940F992461DD5500DD4C23 /* SceneDelegate.swift */; };
 		EA940F9C2461DD5500DD4C23 /* WardrobeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940F9B2461DD5500DD4C23 /* WardrobeViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA489C2C2489946F00CF668B /* ItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
 		EA940F942461DD5500DD4C23 /* Potions-Please.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Potions-Please.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA940F972461DD5500DD4C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA940F992461DD5500DD4C23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				EA94ED7F24846F2300FE53FD /* Item.swift */,
+				EA489C2C2489946F00CF668B /* ItemType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			files = (
 				EA940FC52461F39400DD4C23 /* SelfieViewController.swift in Sources */,
 				EA940FC92461F9AB00DD4C23 /* SliderView.swift in Sources */,
+				EA489C2D2489946F00CF668B /* ItemType.swift in Sources */,
 				EA940FDA2465F26800DD4C23 /* DollView.swift in Sources */,
 				EA940FC22461F30F00DD4C23 /* PPTabBarController.swift in Sources */,
 				EA940FCB246214B600DD4C23 /* SliderView+Constraints.swift in Sources */,
