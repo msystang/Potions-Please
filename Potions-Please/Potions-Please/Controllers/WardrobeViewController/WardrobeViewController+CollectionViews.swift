@@ -20,7 +20,7 @@ extension WardrobeViewController: UICollectionViewDataSource {
         
         switch collectionView {
         case sliderView.categoryCollectionView:
-            return 10
+            return categories.count
         case sliderView.itemCollectionView:
             return items.count
         default:
@@ -33,9 +33,12 @@ extension WardrobeViewController: UICollectionViewDataSource {
         
         switch collectionView {
         case sliderView.categoryCollectionView:
-            let typeCell = collectionView.dequeueReusableCell(withReuseIdentifier: "typeCell", for: indexPath) as! CategoryCollectionViewCell
+            let categoryCell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CategoryCollectionViewCell
+            let category = categories[indexPath.row]
             
-            return typeCell
+            categoryCell.categoryImageView.image = category.image
+            
+            return categoryCell
         case sliderView.itemCollectionView:
             let itemCell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as! ItemCollectionViewCell
             
@@ -53,14 +56,36 @@ extension WardrobeViewController: UICollectionViewDataSource {
         
         switch collectionView {
             case sliderView.categoryCollectionView:
-                break
+                let category = categories[indexPath.row]
+            
+                switch category.type {
+                    case .bkgd:
+                        items = Item.items.filter({ $0.type == .bkgd })
+                    case .base:
+                        items = Item.items.filter({ $0.type == .base })
+                    case .bottom:
+                        items = Item.items.filter({ $0.type == .bottom })
+                    case .hat:
+                        items = Item.items.filter({ $0.type == .hat })
+                    case .onepiece:
+                        items = Item.items.filter({ $0.type == .onepiece })
+                    case .shoes:
+                        items = Item.items.filter({ $0.type == .shoes })
+                    case .top:
+                        items = Item.items.filter({ $0.type == .top })
+                    default:
+                        items = Item.items
+                }
+            
+            
             case sliderView.itemCollectionView:
                 let item = items[indexPath.row]
                 
                 switch item.type {
-                    case .bkgd:
-                        // TODO: upload bkgd
+                    case .all:
                         break
+                    case .bkgd:
+                        backgroundImageView.image = item.image
                     case .base:
                         dollView.baseImageView.image = item.image
                     case .bottom:
@@ -72,7 +97,7 @@ extension WardrobeViewController: UICollectionViewDataSource {
                     case .shoes:
                         dollView.shoesImageView.image = item.image
                     case .top:
-                    dollView.topImageView.image = item.image
+                        dollView.topImageView.image = item.image
                 }
             
             default:

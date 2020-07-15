@@ -49,7 +49,13 @@ class WardrobeViewController: UIViewController {
         }
     }
     
-    var items = Item.items
+    var categories = Category.categories
+    
+    var items = Item.items {
+        didSet {
+            sliderView.itemCollectionView.reloadData()
+        }
+    }
     
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
