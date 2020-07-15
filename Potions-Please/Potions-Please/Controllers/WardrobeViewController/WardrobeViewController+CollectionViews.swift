@@ -90,14 +90,18 @@ extension WardrobeViewController: UICollectionViewDataSource {
                         dollView.baseImageView.image = item.image
                     case .bottom:
                         dollView.bottomImageView.image = item.image
+                        dollView.onePieceImageView.image = nil
                     case .hat:
                         dollView.hatImageView.image = item.image
                     case .onepiece:
                         dollView.onePieceImageView.image = item.image
+                        dollView.topImageView.image = nil
+                        dollView.bottomImageView.image = nil
                     case .shoes:
                         dollView.shoesImageView.image = item.image
                     case .top:
                         dollView.topImageView.image = item.image
+                        dollView.onePieceImageView.image = nil
                 }
             
             default:
