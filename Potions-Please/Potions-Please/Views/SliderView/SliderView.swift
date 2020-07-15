@@ -17,7 +17,7 @@ class SliderView: UIView {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
 //        collectionView.backgroundColor = UIColor(red: 218/255, green: 214/255, blue: 229/255, alpha: 1)
         collectionView.backgroundColor = UIColor(red: 188/255, green: 175/255, blue: 209/255, alpha: 1)
-        collectionView.register(CategoryCollectionViewCell.self, forCellWithReuseIdentifier: "typeCell")
+        collectionView.register(CategoryCollectionViewCell.self, forCellWithReuseIdentifier: "categoryCell")
         collectionView.showsHorizontalScrollIndicator = false
         return collectionView
     }()
