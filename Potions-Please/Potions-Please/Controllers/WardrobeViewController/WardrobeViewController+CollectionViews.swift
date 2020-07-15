@@ -85,7 +85,7 @@ extension WardrobeViewController: UICollectionViewDataSource {
                     case .all:
                         break
                     case .bkgd:
-                        backgroundImageView.image = item.image
+                        dollView.backgroundImageView.image = item.image
                     case .base:
                         dollView.baseImageView.image = item.image
                     case .bottom:

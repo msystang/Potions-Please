@@ -11,13 +11,6 @@ import UIKit
 class WardrobeViewController: UIViewController {
     
     // MARK: - UI Properties
-    var backgroundImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "bkgd-multi")
-        imageView.contentMode = .scaleAspectFill
-        return imageView
-    }()
-
     var dollView = DollView()
 
     
