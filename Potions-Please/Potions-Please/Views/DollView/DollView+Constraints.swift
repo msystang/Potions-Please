@@ -14,9 +14,9 @@ extension DollView {
         self.addSubview(backgroundImageView)
         self.addSubview(baseImageView)
         self.addSubview(hatImageView)
-        self.addSubview(topImageView)
         self.addSubview(shoesImageView)
         self.addSubview(bottomImageView)
+        self.addSubview(topImageView)
         self.addSubview(onePieceImageView)
     }
     
@@ -28,8 +28,8 @@ extension DollView {
         setBottomImageViewConstraints()
         
         // Toggle One-piece & top/bottom constraints depending on which is selected
-        setOnePieceImageViewCOnstraints()
-        setShoesImageViewCOnstraints()
+        setOnePieceImageViewConstraints()
+        setShoesImageViewConstraints()
     }
     
     // MARK: - Private Methods
@@ -88,7 +88,7 @@ extension DollView {
         ])
     }
     
-    private func setOnePieceImageViewCOnstraints() {
+    private func setOnePieceImageViewConstraints() {
         onePieceImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -99,7 +99,7 @@ extension DollView {
         ])
     }
     
-    private func setShoesImageViewCOnstraints() {
+    private func setShoesImageViewConstraints() {
         shoesImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
