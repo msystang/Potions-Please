@@ -12,6 +12,7 @@ class WardrobeViewController: UIViewController {
     
     // MARK: - UI Properties
     var dollView = DollView()
+
     
     var gestureView: UIView = {
         let view = UIView()
@@ -41,7 +42,13 @@ class WardrobeViewController: UIViewController {
         }
     }
     
-    var items = Item.items
+    var categories = Category.categories
+    
+    var items = Item.items {
+        didSet {
+            sliderView.itemCollectionView.reloadData()
+        }
+    }
     
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {

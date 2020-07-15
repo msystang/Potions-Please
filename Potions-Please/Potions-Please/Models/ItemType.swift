@@ -7,6 +7,7 @@
 //
 
 enum ItemType: String {
+    case all
     case bkgd
     case base
     case bottom
@@ -15,3 +16,4 @@ enum ItemType: String {
     case shoes
     case top
 }
+

@@ -12,22 +12,20 @@ class DollView: UIView {
     
     var backgroundImageView: UIImageView = {
         let imageView = UIImageView()
-        // TODO: select bkgd image from typeCV
-        imageView.image = UIImage(named: "bkgd-all")
+        imageView.image = UIImage(named: "bkgd-multi")
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     
     var baseImageView: UIImageView = {
         let imageView = UIImageView()
-//        imageView.image = UIImage(named: "rosy")
+        imageView.image = UIImage(named: "base-holly")
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
     var hatImageView: UIImageView = {
         let imageView = UIImageView()
-//        imageView.image = UIImage(named: "rosy-hat")
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
@@ -46,14 +44,12 @@ class DollView: UIView {
     
     var onePieceImageView: UIImageView = {
         let imageView = UIImageView()
-//        imageView.image = UIImage(named: "rosy-onepiece")
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
     var shoesImageView: UIImageView = {
         let imageView = UIImageView()
-//        imageView.image = UIImage(named: "rosy-shoes")
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()

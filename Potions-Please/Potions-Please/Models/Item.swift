@@ -6,6 +6,10 @@
 //  Copyright © 2020 Sunni Tang. All rights reserved.
 //
 
+// TODO: create enum for image strings
+// TODO: add backgroundImageView to DollView
+// TODO: Handle onepiece vs. top/bottom
+
 import UIKit
 
 class Item {
@@ -21,9 +25,6 @@ class Item {
         self.thumbnailImage = thumbnailImage
     }
     
-    // TODO: Add bkgd images
-    // TODO: Deal with force-unwrapped UIImages
-    // TODO: Replace thumbnail Images
     static let items: [Item] = [
         // Backgrounds
         Item(name: "Blue Background", type: .bkgd, image: UIImage(named: "bkgd-blue"), thumbnailImage: UIImage(named: "bkgd-blue")),
@@ -31,8 +32,6 @@ class Item {
         Item(name: "Multi Background", type: .bkgd, image: UIImage(named: "bkgd-multi"), thumbnailImage: UIImage(named: "bkgd-multi")),
         Item(name: "Pink Background", type: .bkgd, image: UIImage(named: "bkgd-pink"), thumbnailImage: UIImage(named: "bkgd-pink")),
         Item(name: "Purple Background", type: .bkgd, image: UIImage(named: "bkgd-purple"), thumbnailImage: UIImage(named: "bkgd-purple")),
-        
-        
         
         // Bases
         Item(name: "Holly", type: .base, image: UIImage(named: "base-holly"), thumbnailImage: UIImage(named: "thumbnail-base-holly")),
@@ -43,7 +42,7 @@ class Item {
         // Bottoms
         Item(name: "Holly's Pants", type: .bottom, image: UIImage(named: "bottom-holly"), thumbnailImage: UIImage(named: "thumbnail-bottom-holly")),
         Item(name: "Iris's Skirt", type: .bottom, image: UIImage(named: "bottom-iris"), thumbnailImage: UIImage(named: "thumbnail-bottom-iris")),
-        Item(name: "Holly's Skirt", type: .bottom, image: UIImage(named: "bottom-holly"), thumbnailImage: UIImage(named: "thumbnail-bottom-holly")),
+        Item(name: "Rosy's Skirt", type: .bottom, image: UIImage(named: "bottom-rosy"), thumbnailImage: UIImage(named: "thumbnail-bottom-rosy")),
         Item(name: "Skye's Pants", type: .bottom, image: UIImage(named: "bottom-skye"), thumbnailImage: UIImage(named: "thumbnail-bottom-skye")),
         
         // Hats
@@ -58,7 +57,6 @@ class Item {
         Item(name: "Rosy's Dress", type: .onepiece, image: UIImage(named: "onepiece-rosy"), thumbnailImage: UIImage(named: "thumbnail-onepiece-rosy")),
         Item(name: "Skye's Dress", type: .onepiece, image: UIImage(named: "onepiece-skye"), thumbnailImage: UIImage(named: "thumbnail-onepiece-skye")),
 
-        
         // Shoes
         Item(name: "Holly's Shoes", type: .shoes, image: UIImage(named: "shoes-holly"), thumbnailImage: UIImage(named: "thumbnail-shoes-holly")),
         Item(name: "Holly's Shoes 2", type: .shoes, image: UIImage(named: "shoes-holly-2"), thumbnailImage: UIImage(named: "thumbnail-shoes-holly-2")),
