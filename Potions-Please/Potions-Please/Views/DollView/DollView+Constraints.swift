@@ -22,10 +22,10 @@ extension DollView {
     
     func addConstraints() {
         setBackgroundImageViewConstraints()
-        setBaseImageViewCOnstraints()
-        setHatImageViewCOnstraints()
-        setTopImageViewCOnstraints()
-        setBottomImageViewCOnstraints()
+        setBaseImageViewConstraints()
+        setHatImageViewConstraints()
+        setTopImageViewConstraints()
+        setBottomImageViewConstraints()
         
         // Toggle One-piece & top/bottom constraints depending on which is selected
         setOnePieceImageViewCOnstraints()
@@ -44,7 +44,7 @@ extension DollView {
         ])
     }
     
-    private func setBaseImageViewCOnstraints() {
+    private func setBaseImageViewConstraints() {
         baseImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -55,7 +55,7 @@ extension DollView {
         ])
     }
     
-    private func setHatImageViewCOnstraints() {
+    private func setHatImageViewConstraints() {
          hatImageView.translatesAutoresizingMaskIntoConstraints = false
          
          NSLayoutConstraint.activate([
@@ -66,7 +66,7 @@ extension DollView {
          ])
      }
     
-    private func setTopImageViewCOnstraints() {
+    private func setTopImageViewConstraints() {
         topImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -77,7 +77,7 @@ extension DollView {
         ])
     }
     
-    private func setBottomImageViewCOnstraints() {
+    private func setBottomImageViewConstraints() {
         bottomImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
