@@ -15,9 +15,9 @@ extension DollView {
         self.addSubview(baseImageView)
         self.addSubview(hatImageView)
         self.addSubview(topImageView)
+        self.addSubview(shoesImageView)
         self.addSubview(bottomImageView)
         self.addSubview(onePieceImageView)
-        self.addSubview(shoesImageView)
     }
     
     func addConstraints() {
