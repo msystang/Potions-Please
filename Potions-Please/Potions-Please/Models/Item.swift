@@ -38,26 +38,30 @@ class Item {
         Item(name: "Rosy", type: .base, image: UIImage(named: "base-rosy"), thumbnailImage: UIImage(named: "thumbnail-base-rosy")),
         Item(name: "Iris", type: .base, image: UIImage(named: "base-iris"), thumbnailImage: UIImage(named: "thumbnail-base-iris")),
         Item(name: "Skye", type: .base, image: UIImage(named: "base-skye"), thumbnailImage: UIImage(named: "thumbnail-base-skye")),
-
+        
         // Bottoms
+        Item(name: "No Bottom", type: .bottom, image: nil, thumbnailImage: UIImage(named: "thumbnail-cancel")),
         Item(name: "Holly's Pants", type: .bottom, image: UIImage(named: "bottom-holly"), thumbnailImage: UIImage(named: "thumbnail-bottom-holly")),
         Item(name: "Iris's Skirt", type: .bottom, image: UIImage(named: "bottom-iris"), thumbnailImage: UIImage(named: "thumbnail-bottom-iris")),
         Item(name: "Rosy's Skirt", type: .bottom, image: UIImage(named: "bottom-rosy"), thumbnailImage: UIImage(named: "thumbnail-bottom-rosy")),
         Item(name: "Skye's Pants", type: .bottom, image: UIImage(named: "bottom-skye"), thumbnailImage: UIImage(named: "thumbnail-bottom-skye")),
         
         // Hats
+        Item(name: "No Bottom", type: .hat, image: nil, thumbnailImage: UIImage(named: "thumbnail-cancel")),
         Item(name: "Holly's Hat", type: .hat, image: UIImage(named: "hat-holly"), thumbnailImage: UIImage(named: "thumbnail-hat-holly")),
         Item(name: "Iris's Hat", type: .hat, image: UIImage(named: "hat-iris"), thumbnailImage: UIImage(named: "thumbnail-hat-iris")),
         Item(name: "Rosy's Hat", type: .hat, image: UIImage(named: "hat-rosy"), thumbnailImage: UIImage(named: "thumbnail-hat-rosy")),
         Item(name: "Skye's Hat", type: .hat, image: UIImage(named: "hat-skye"), thumbnailImage: UIImage(named: "thumbnail-hat-skye")),
         
         // Onepieces
+        Item(name: "No Onepiece", type: .onepiece, image: nil, thumbnailImage: UIImage(named: "thumbnail-cancel")),
         Item(name: "Holly's Dress", type: .onepiece, image: UIImage(named: "onepiece-holly"), thumbnailImage: UIImage(named: "thumbnail-onepiece-holly")),
         Item(name: "Iris's Dress", type: .onepiece, image: UIImage(named: "onepiece-iris"), thumbnailImage: UIImage(named: "thumbnail-onepiece-iris")),
         Item(name: "Rosy's Dress", type: .onepiece, image: UIImage(named: "onepiece-rosy"), thumbnailImage: UIImage(named: "thumbnail-onepiece-rosy")),
         Item(name: "Skye's Dress", type: .onepiece, image: UIImage(named: "onepiece-skye"), thumbnailImage: UIImage(named: "thumbnail-onepiece-skye")),
-
+        
         // Shoes
+        Item(name: "No Shoes", type: .shoes, image: nil, thumbnailImage: UIImage(named: "thumbnail-cancel")),
         Item(name: "Holly's Shoes", type: .shoes, image: UIImage(named: "shoes-holly"), thumbnailImage: UIImage(named: "thumbnail-shoes-holly")),
         Item(name: "Holly's Shoes 2", type: .shoes, image: UIImage(named: "shoes-holly-2"), thumbnailImage: UIImage(named: "thumbnail-shoes-holly-2")),
         Item(name: "Iris's Shoes", type: .shoes, image: UIImage(named: "shoes-iris"), thumbnailImage: UIImage(named: "thumbnail-shoes-iris")),
@@ -66,12 +70,13 @@ class Item {
         Item(name: "Rosy's Shoes 2", type: .shoes, image: UIImage(named: "shoes-rosy-2"), thumbnailImage: UIImage(named: "thumbnail-shoes-rosy-2")),
         Item(name: "Skye's Shoes", type: .shoes, image: UIImage(named: "shoes-skye"), thumbnailImage: UIImage(named: "thumbnail-shoes-skye")),
         Item(name: "Skye's Shoes 2", type: .shoes, image: UIImage(named: "shoes-skye-2"), thumbnailImage: UIImage(named: "thumbnail-shoes-skye-2")),
-
+        
         // Tops
-      Item(name: "Holly's Top", type: .top, image: UIImage(named: "top-holly"), thumbnailImage: UIImage(named: "thumbnail-top-holly")),
-      Item(name: "Iris's Top", type: .top, image: UIImage(named: "top-iris"), thumbnailImage: UIImage(named: "thumbnail-top-iris")),
-      Item(name: "Rosy's Top", type: .top, image: UIImage(named: "top-rosy"), thumbnailImage: UIImage(named: "thumbnail-top-rosy")),
-      Item(name: "Skye's Top", type: .top, image: UIImage(named: "top-skye"), thumbnailImage: UIImage(named: "thumbnail-top-skye")),
+        Item(name: "No Top", type: .top, image: nil, thumbnailImage: UIImage(named: "thumbnail-cancel")),
+        Item(name: "Holly's Top", type: .top, image: UIImage(named: "top-holly"), thumbnailImage: UIImage(named: "thumbnail-top-holly")),
+        Item(name: "Iris's Top", type: .top, image: UIImage(named: "top-iris"), thumbnailImage: UIImage(named: "thumbnail-top-iris")),
+        Item(name: "Rosy's Top", type: .top, image: UIImage(named: "top-rosy"), thumbnailImage: UIImage(named: "thumbnail-top-rosy")),
+        Item(name: "Skye's Top", type: .top, image: UIImage(named: "top-skye"), thumbnailImage: UIImage(named: "thumbnail-top-skye")),
         
         
     ]

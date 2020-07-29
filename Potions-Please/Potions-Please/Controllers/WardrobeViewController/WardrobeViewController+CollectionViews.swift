@@ -74,7 +74,7 @@ extension WardrobeViewController: UICollectionViewDataSource {
                     case .top:
                         items = Item.items.filter({ $0.type == .top })
                     default:
-                        items = Item.items
+                        items = Item.items.filter({ $0.image != nil })
                 }
             
             

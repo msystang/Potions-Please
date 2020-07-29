@@ -44,7 +44,7 @@ class WardrobeViewController: UIViewController {
     
     var categories = Category.categories
     
-    var items = Item.items {
+    var items = Item.items.filter({ $0.image != nil }) {
         didSet {
             sliderView.itemCollectionView.reloadData()
         }
