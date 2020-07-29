@@ -7,8 +7,6 @@
 //
 
 // TODO: create enum for image strings
-// TODO: add backgroundImageView to DollView
-// TODO: Handle onepiece vs. top/bottom
 
 import UIKit
 

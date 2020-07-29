@@ -13,7 +13,8 @@ class ItemCollectionViewCell: UICollectionViewCell {
     var itemImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.isUserInteractionEnabled = true
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
         imageView.backgroundColor = UIColor(red: 188/255, green: 175/255, blue: 209/255, alpha: 1)
         return imageView
     }()
