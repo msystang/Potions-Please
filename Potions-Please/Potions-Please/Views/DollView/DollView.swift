@@ -12,14 +12,14 @@ class DollView: UIView {
     
     var backgroundImageView: UIImageView = {
         let imageView = UIImageView()
-        // TODO: select bkgd image from typeCV
-        imageView.image = UIImage(named: "bkgd-all")
+        imageView.image = UIImage(named: "bkgd-multi")
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     
     var baseImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.image = UIImage(named: "base-holly")
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()

@@ -10,9 +10,10 @@ import UIKit
 
 class CategoryCollectionViewCell: UICollectionViewCell {
     
-    var typeImageView: UIImageView = {
+    var categoryImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.isUserInteractionEnabled = true
+        imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = UIColor(red: 218/255, green: 214/255, blue: 229/255, alpha: 1)
 //        imageView.backgroundColor = UIColor(red: 188/255, green: 175/255, blue: 209/255, alpha: 1)
         return imageView
@@ -36,7 +37,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     }
     
     private func addSubviews() {
-        contentView.addSubview(typeImageView)
+        contentView.addSubview(categoryImageView)
     }
     
     private func addConstraints() {
@@ -44,13 +45,13 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     }
     
     private func setTypeImageViewConstraints() {
-        typeImageView.translatesAutoresizingMaskIntoConstraints = false
+        categoryImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            typeImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-            typeImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            typeImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor),
-            typeImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            categoryImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            categoryImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            categoryImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor),
+            categoryImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
             
         ])
     }

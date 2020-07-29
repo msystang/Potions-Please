@@ -12,6 +12,7 @@ class WardrobeViewController: UIViewController {
     
     // MARK: - UI Properties
     var dollView = DollView()
+
     
     var gestureView: UIView = {
         let view = UIView()
@@ -38,6 +39,14 @@ class WardrobeViewController: UIViewController {
         didSet {
             self.setChevronImage(state: currentSliderViewState)
             self.updateSliderConstraints(state: currentSliderViewState)
+        }
+    }
+    
+    var categories = Category.categories
+    
+    var items = Item.items {
+        didSet {
+            sliderView.itemCollectionView.reloadData()
         }
     }
     

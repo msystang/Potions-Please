@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA489C2D2489946F00CF668B /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA489C2C2489946F00CF668B /* ItemType.swift */; };
+		EA6FE0DF24BEB0D000EF1D59 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6FE0DE24BEB0D000EF1D59 /* Category.swift */; };
 		EA940F982461DD5500DD4C23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940F972461DD5500DD4C23 /* AppDelegate.swift */; };
 		EA940F9A2461DD5500DD4C23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940F992461DD5500DD4C23 /* SceneDelegate.swift */; };
 		EA940F9C2461DD5500DD4C23 /* WardrobeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940F9B2461DD5500DD4C23 /* WardrobeViewController.swift */; };
@@ -26,6 +28,7 @@
 		EA940FD72465DA9600DD4C23 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FD62465DA9600DD4C23 /* ItemCollectionViewCell.swift */; };
 		EA940FDA2465F26800DD4C23 /* DollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FD92465F26800DD4C23 /* DollView.swift */; };
 		EA940FDD2465F3D300DD4C23 /* DollView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FDC2465F3D300DD4C23 /* DollView+Constraints.swift */; };
+		EA94ED8024846F2300FE53FD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94ED7F24846F2300FE53FD /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA489C2C2489946F00CF668B /* ItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
+		EA6FE0DE24BEB0D000EF1D59 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		EA940F942461DD5500DD4C23 /* Potions-Please.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Potions-Please.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA940F972461DD5500DD4C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA940F992461DD5500DD4C23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 		EA940FD62465DA9600DD4C23 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		EA940FD92465F26800DD4C23 /* DollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollView.swift; sourceTree = "<group>"; };
 		EA940FDC2465F3D300DD4C23 /* DollView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DollView+Constraints.swift"; sourceTree = "<group>"; };
+		EA94ED7F24846F2300FE53FD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,9 @@
 		EA940FBC2461F1F700DD4C23 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EA94ED7F24846F2300FE53FD /* Item.swift */,
+				EA6FE0DE24BEB0D000EF1D59 /* Category.swift */,
+				EA489C2C2489946F00CF668B /* ItemType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -301,10 +310,13 @@
 			files = (
 				EA940FC52461F39400DD4C23 /* SelfieViewController.swift in Sources */,
 				EA940FC92461F9AB00DD4C23 /* SliderView.swift in Sources */,
+				EA6FE0DF24BEB0D000EF1D59 /* Category.swift in Sources */,
+				EA489C2D2489946F00CF668B /* ItemType.swift in Sources */,
 				EA940FDA2465F26800DD4C23 /* DollView.swift in Sources */,
 				EA940FC22461F30F00DD4C23 /* PPTabBarController.swift in Sources */,
 				EA940FCB246214B600DD4C23 /* SliderView+Constraints.swift in Sources */,
 				EA940FD52465BF8600DD4C23 /* CategoryCollectionViewCell.swift in Sources */,
+				EA94ED8024846F2300FE53FD /* Item.swift in Sources */,
 				EA940F9C2461DD5500DD4C23 /* WardrobeViewController.swift in Sources */,
 				EA940FC72461F3A700DD4C23 /* InfoViewController.swift in Sources */,
 				EA940FCF2463804900DD4C23 /* WardrobeViewController+Gestures.swift in Sources */,
