@@ -28,7 +28,7 @@ extension SliderView {
             categoryCollectionView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             categoryCollectionView.leftAnchor.constraint(equalTo: self.leftAnchor),
             categoryCollectionView.topAnchor.constraint(equalTo: self.topAnchor),
-            categoryCollectionView.heightAnchor.constraint(equalToConstant: 50)
+            categoryCollectionView.heightAnchor.constraint(equalToConstant: 60)
         ])
     }
     
