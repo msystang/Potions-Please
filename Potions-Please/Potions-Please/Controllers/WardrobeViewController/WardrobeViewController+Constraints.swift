@@ -42,7 +42,7 @@ extension WardrobeViewController {
         NSLayoutConstraint.activate([
             sliderView.centerXAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerXAnchor),
             sliderView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor),
-            sliderView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
+            sliderView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
             sliderPartialHeightConstraint
         ])
     }
