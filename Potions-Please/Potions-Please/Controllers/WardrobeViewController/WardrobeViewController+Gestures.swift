@@ -11,7 +11,6 @@ import UIKit
 extension WardrobeViewController {
     // MARK: - Objc Functions
     @objc func gesturePerformed(gesture: UIGestureRecognizer) {
-        print(gesture)
         
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
@@ -22,6 +21,8 @@ extension WardrobeViewController {
             default:
                 return
             }
+        } else if gesture is UITapGestureRecognizer {
+            self.tapped(for: currentSliderViewState)
         }
     }
     

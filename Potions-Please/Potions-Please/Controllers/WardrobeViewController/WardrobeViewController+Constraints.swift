@@ -30,7 +30,7 @@ extension WardrobeViewController {
         
         NSLayoutConstraint.activate([
             dollView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            dollView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            dollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -80),
             dollView.topAnchor.constraint(equalTo: self.view.topAnchor),
             dollView.leftAnchor.constraint(equalTo: self.view.leftAnchor)
         ])

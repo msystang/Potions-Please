@@ -77,6 +77,9 @@ extension WardrobeViewController: UICollectionViewDataSource {
                         items = Item.items.filter({ $0.image != nil })
                 }
             
+                if currentSliderViewState == .collapsed {
+                    self.tapped(for: currentSliderViewState)
+                }
             
             case sliderView.itemCollectionView:
                 let item = items[indexPath.row]
