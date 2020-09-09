@@ -168,10 +168,10 @@
 		EA940FBE2461F20D00DD4C23 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EAA0BAB8250935650043E55F /* MenuView */,
 				EA940FDB2465F26D00DD4C23 /* DollView */,
 				EA940FD82465F24200DD4C23 /* SliderView */,
 				EAA0BAB3250934FE0043E55F /* CollectionViewCells */,
-				EAA0BAB8250935650043E55F /* MenuView */,
 			);
 			path = Views;
 			sourceTree = "<group>";

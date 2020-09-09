@@ -11,6 +11,8 @@ import UIKit
 class WardrobeViewController: UIViewController {
     
     // MARK: - UI Properties
+    var menuView = MenuView()
+    
     var dollView = DollView()
 
     var gestureView: UIView = {
