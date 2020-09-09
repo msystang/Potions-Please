@@ -33,6 +33,7 @@
 		EAA0BAB72509353C0043E55F /* MenuView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0BAB62509353C0043E55F /* MenuView+Constraints.swift */; };
 		EAA0BABA2509592B0043E55F /* WardrobeViewController+MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0BAB92509592B0043E55F /* WardrobeViewController+MenuView.swift */; };
 		EAA0BABC25095ECF0043E55F /* WardrobeViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0BABB25095ECF0043E55F /* WardrobeViewController+Alerts.swift */; };
+		EAA0BABE25096D840043E55F /* DollView+AsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0BABD25096D840043E55F /* DollView+AsImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		EAA0BAB62509353C0043E55F /* MenuView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuView+Constraints.swift"; sourceTree = "<group>"; };
 		EAA0BAB92509592B0043E55F /* WardrobeViewController+MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WardrobeViewController+MenuView.swift"; sourceTree = "<group>"; };
 		EAA0BABB25095ECF0043E55F /* WardrobeViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WardrobeViewController+Alerts.swift"; sourceTree = "<group>"; };
+		EAA0BABD25096D840043E55F /* DollView+AsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DollView+AsImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 			children = (
 				EA940FD92465F26800DD4C23 /* DollView.swift */,
 				EA940FDC2465F3D300DD4C23 /* DollView+Constraints.swift */,
+				EAA0BABD25096D840043E55F /* DollView+AsImage.swift */,
 			);
 			path = DollView;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				EAA0BAB72509353C0043E55F /* MenuView+Constraints.swift in Sources */,
 				EAA0BAB5250935180043E55F /* MenuView.swift in Sources */,
 				EA940FC22461F30F00DD4C23 /* PPTabBarController.swift in Sources */,
+				EAA0BABE25096D840043E55F /* DollView+AsImage.swift in Sources */,
 				EA940FCB246214B600DD4C23 /* SliderView+Constraints.swift in Sources */,
 				EA940FD52465BF8600DD4C23 /* CategoryCollectionViewCell.swift in Sources */,
 				EA94ED8024846F2300FE53FD /* Item.swift in Sources */,
