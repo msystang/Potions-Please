@@ -30,6 +30,9 @@ class Item {
         Item(name: "Multi Background", type: .bkgd, image: UIImage(named: "bkgd-multi"), thumbnailImage: UIImage(named: "bkgd-multi")),
         Item(name: "Pink Background", type: .bkgd, image: UIImage(named: "bkgd-pink"), thumbnailImage: UIImage(named: "bkgd-pink")),
         Item(name: "Purple Background", type: .bkgd, image: UIImage(named: "bkgd-purple"), thumbnailImage: UIImage(named: "bkgd-purple")),
+        Item(name: "Blue Potions Background", type: .bkgd, image: UIImage(named: "bkgd-blue-potions"), thumbnailImage: UIImage(named: "bkgd-blue-potions")),
+        Item(name: "Green Potions Background", type: .bkgd, image: UIImage(named: "bkgd-green-potions"), thumbnailImage: UIImage(named: "bkgd-green-potions")),
+        Item(name: "Pink Potions Background", type: .bkgd, image: UIImage(named: "bkgd-pink-potions"), thumbnailImage: UIImage(named: "bkgd-pink-potions")),
         Item(name: "Purple Potions Background", type: .bkgd, image: UIImage(named: "bkgd-purple-potions"), thumbnailImage: UIImage(named: "bkgd-purple-potions")),
         
         // Bases
