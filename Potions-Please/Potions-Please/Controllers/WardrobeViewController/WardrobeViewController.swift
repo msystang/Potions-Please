@@ -60,13 +60,10 @@ class WardrobeViewController: UIViewController {
         setUpMenuView()
         setUpSliderView()
         setUpCollectionViews()
-        
     }
     
     private func setUpMenuView() {
-        menuView.clearButton.addTarget(self, action: #selector(clearButtonPressed), for: .touchUpInside)
-        menuView.downloadButton.addTarget(self, action: #selector(downloadButtonPressed), for: .touchUpInside)
-        menuView.infoButton.addTarget(self, action: #selector(infoButtonPressed), for: .touchUpInside)
+        addTargetsToMenuButtons()
     }
     
     private func setUpSliderView() {

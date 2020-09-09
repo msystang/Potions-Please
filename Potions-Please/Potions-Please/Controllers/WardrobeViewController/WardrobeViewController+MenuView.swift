@@ -10,8 +10,17 @@ import UIKit
 
 extension WardrobeViewController {
     
-    @objc func clearButtonPressed() {
+    func addTargetsToMenuButtons() {
+        menuView.clearButton.addTarget(self, action: #selector(showClearAlert), for: .touchUpInside)
+        menuView.downloadButton.addTarget(self, action: #selector(downloadButtonPressed), for: .touchUpInside)
+        menuView.infoButton.addTarget(self, action: #selector(infoButtonPressed), for: .touchUpInside)
+    }
+    
+    func handleClearButtonPressed(action: UIAlertAction) {
         print("clear")
+        if action.title == "Clear" {
+            dollView.clearDollView()
+        }
     }
     
     @objc func downloadButtonPressed() {
