@@ -13,7 +13,6 @@ class WardrobeViewController: UIViewController {
     // MARK: - UI Properties
     var dollView = DollView()
 
-    
     var gestureView: UIView = {
         let view = UIView()
         return view

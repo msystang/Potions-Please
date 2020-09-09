@@ -29,6 +29,8 @@
 		EA940FDA2465F26800DD4C23 /* DollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FD92465F26800DD4C23 /* DollView.swift */; };
 		EA940FDD2465F3D300DD4C23 /* DollView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FDC2465F3D300DD4C23 /* DollView+Constraints.swift */; };
 		EA94ED8024846F2300FE53FD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94ED7F24846F2300FE53FD /* Item.swift */; };
+		EAA0BAB5250935180043E55F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0BAB4250935180043E55F /* MenuView.swift */; };
+		EAA0BAB72509353C0043E55F /* MenuView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0BAB62509353C0043E55F /* MenuView+Constraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		EA940FD92465F26800DD4C23 /* DollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollView.swift; sourceTree = "<group>"; };
 		EA940FDC2465F3D300DD4C23 /* DollView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DollView+Constraints.swift"; sourceTree = "<group>"; };
 		EA94ED7F24846F2300FE53FD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		EAA0BAB4250935180043E55F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		EAA0BAB62509353C0043E55F /* MenuView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuView+Constraints.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,8 +170,8 @@
 			children = (
 				EA940FDB2465F26D00DD4C23 /* DollView */,
 				EA940FD82465F24200DD4C23 /* SliderView */,
-				EA940FD42465BF8600DD4C23 /* CategoryCollectionViewCell.swift */,
-				EA940FD62465DA9600DD4C23 /* ItemCollectionViewCell.swift */,
+				EAA0BAB3250934FE0043E55F /* CollectionViewCells */,
+				EAA0BAB8250935650043E55F /* MenuView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,6 +210,24 @@
 				EA940FDC2465F3D300DD4C23 /* DollView+Constraints.swift */,
 			);
 			path = DollView;
+			sourceTree = "<group>";
+		};
+		EAA0BAB3250934FE0043E55F /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				EA940FD42465BF8600DD4C23 /* CategoryCollectionViewCell.swift */,
+				EA940FD62465DA9600DD4C23 /* ItemCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		EAA0BAB8250935650043E55F /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				EAA0BAB4250935180043E55F /* MenuView.swift */,
+				EAA0BAB62509353C0043E55F /* MenuView+Constraints.swift */,
+			);
+			path = MenuView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +335,8 @@
 				EA6FE0DF24BEB0D000EF1D59 /* Category.swift in Sources */,
 				EA489C2D2489946F00CF668B /* ItemType.swift in Sources */,
 				EA940FDA2465F26800DD4C23 /* DollView.swift in Sources */,
+				EAA0BAB72509353C0043E55F /* MenuView+Constraints.swift in Sources */,
+				EAA0BAB5250935180043E55F /* MenuView.swift in Sources */,
 				EA940FC22461F30F00DD4C23 /* PPTabBarController.swift in Sources */,
 				EA940FCB246214B600DD4C23 /* SliderView+Constraints.swift in Sources */,
 				EA940FD52465BF8600DD4C23 /* CategoryCollectionViewCell.swift in Sources */,
