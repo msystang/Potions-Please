@@ -41,18 +41,22 @@ class MenuView: UIView {
         let button = UIButton()
         button.setImage(UIImage(named: "menu-info-purple"), for: .normal)
         button.alpha = 0
+        button.imageEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        button.backgroundColor = UIColor(red: 218/255, green: 214/255, blue: 229/255, alpha: 1)
+        button.layer.cornerRadius = 8
         return button
     }()
     
-    lazy var downloadButtonOpenedTopConstraint: NSLayoutConstraint = downloadButton.topAnchor.constraint(equalTo: menuButton.bottomAnchor, constant: 20)
-    lazy var downloadButtonCollapsedTopConstraint: NSLayoutConstraint = downloadButton.topAnchor.constraint(equalTo: menuButton.topAnchor)
-    
-    lazy var clearButtonOpenedTopConstraint: NSLayoutConstraint = clearButton.topAnchor.constraint(equalTo: downloadButton.bottomAnchor, constant: 20)
+    lazy var clearButtonOpenedTopConstraint: NSLayoutConstraint = clearButton.topAnchor.constraint(equalTo: menuButton.bottomAnchor, constant: 20)
     lazy var clearButtonCollapsedTopConstraint: NSLayoutConstraint = clearButton.topAnchor.constraint(equalTo: menuButton.topAnchor)
     
-    lazy var infoButtonOpenedTopConstraint: NSLayoutConstraint = infoButton.topAnchor.constraint(equalTo: clearButton.bottomAnchor, constant: 20)
+    lazy var downloadButtonOpenedTopConstraint: NSLayoutConstraint = downloadButton.topAnchor.constraint(equalTo: clearButton.bottomAnchor, constant: 20)
+    lazy var downloadButtonCollapsedTopConstraint: NSLayoutConstraint = downloadButton.topAnchor.constraint(equalTo: menuButton.topAnchor)
+    
+    lazy var infoButtonOpenedTopConstraint: NSLayoutConstraint = infoButton.topAnchor.constraint(equalTo: downloadButton.bottomAnchor, constant: 20)
     lazy var infoButtonCollapsedTopConstraint: NSLayoutConstraint = infoButton.topAnchor.constraint(equalTo: menuButton.topAnchor)
     
+    // MARK: - Internal Properties
     var currentMenuViewState: MenuViewState = .collapsed {
         didSet {
             self.setMenuButtonImage(state: currentMenuViewState)
@@ -72,11 +76,12 @@ class MenuView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
+    // MARK: Objective-C Functions
     @objc func menuButtonPressed() {
         currentMenuViewState = currentMenuViewState == .opened ? .collapsed : .opened
     }
     
+    // MARK: Private Functions
     private func setMenuButtonImage(state: MenuViewState) {
         switch state {
         case .collapsed:
@@ -103,24 +108,24 @@ class MenuView: UIView {
     }
     
     private func activateOpenedButtonConstraints() {
-        NSLayoutConstraint.deactivate([downloadButtonCollapsedTopConstraint, clearButtonCollapsedTopConstraint, infoButtonCollapsedTopConstraint])
-        NSLayoutConstraint.activate([downloadButtonOpenedTopConstraint, clearButtonOpenedTopConstraint, infoButtonOpenedTopConstraint])
+        NSLayoutConstraint.deactivate([clearButtonCollapsedTopConstraint, downloadButtonCollapsedTopConstraint, infoButtonCollapsedTopConstraint])
+        NSLayoutConstraint.activate([clearButtonOpenedTopConstraint, downloadButtonOpenedTopConstraint, infoButtonOpenedTopConstraint])
     }
     
     private func activateCollapsedButtonConstraints() {
-        NSLayoutConstraint.deactivate([downloadButtonOpenedTopConstraint, clearButtonOpenedTopConstraint, infoButtonOpenedTopConstraint])
-        NSLayoutConstraint.activate([downloadButtonCollapsedTopConstraint, clearButtonCollapsedTopConstraint, infoButtonCollapsedTopConstraint])
+        NSLayoutConstraint.deactivate([clearButtonOpenedTopConstraint, downloadButtonOpenedTopConstraint, infoButtonOpenedTopConstraint])
+        NSLayoutConstraint.activate([clearButtonCollapsedTopConstraint, downloadButtonCollapsedTopConstraint, infoButtonCollapsedTopConstraint])
     }
 
     private func removeButtonAlpha() {
-        downloadButton.alpha = 0
         clearButton.alpha = 0
+        downloadButton.alpha = 0
         infoButton.alpha = 0
     }
     
     private func addButtonAlpha() {
-        downloadButton.alpha = 1
         clearButton.alpha = 1
+        downloadButton.alpha = 1
         infoButton.alpha = 1
     }
 }

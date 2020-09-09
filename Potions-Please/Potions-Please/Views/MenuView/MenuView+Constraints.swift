@@ -11,15 +11,15 @@ import UIKit
 extension MenuView {
     func addSubviews() {
         self.addSubview(menuButton)
-        self.addSubview(downloadButton)
         self.addSubview(clearButton)
+        self.addSubview(downloadButton)
         self.addSubview(infoButton)
     }
 
     func addConstraints() {
         setMenuButtonConstraints()
-        setDownloadButtonConstraints()
         setClearButtonConstraints()
+        setDownloadButtonConstraints()
         setInfoButtonConstraints()
     }
     
@@ -27,21 +27,10 @@ extension MenuView {
         menuButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            menuButton.heightAnchor.constraint(equalToConstant: 30),
-            menuButton.widthAnchor.constraint(equalToConstant: 30),
+            menuButton.heightAnchor.constraint(equalToConstant: 40),
+            menuButton.widthAnchor.constraint(equalToConstant: 40),
             menuButton.rightAnchor.constraint(equalTo: self.rightAnchor),
             menuButton.topAnchor.constraint(equalTo: self.topAnchor)
-        ])
-    }
-    
-    private func setDownloadButtonConstraints() {
-        downloadButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            downloadButton.heightAnchor.constraint(equalToConstant: 30),
-            downloadButton.widthAnchor.constraint(equalToConstant: 30),
-            downloadButton.rightAnchor.constraint(equalTo: self.rightAnchor),
-            downloadButtonCollapsedTopConstraint
         ])
     }
     
@@ -49,10 +38,21 @@ extension MenuView {
         clearButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            clearButton.heightAnchor.constraint(equalToConstant: 30),
-            clearButton.widthAnchor.constraint(equalToConstant: 30),
+            clearButton.heightAnchor.constraint(equalToConstant: 40),
+            clearButton.widthAnchor.constraint(equalToConstant: 40),
             clearButton.rightAnchor.constraint(equalTo: self.rightAnchor),
             clearButtonCollapsedTopConstraint
+        ])
+    }
+    
+    private func setDownloadButtonConstraints() {
+        downloadButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            downloadButton.heightAnchor.constraint(equalToConstant: 40),
+            downloadButton.widthAnchor.constraint(equalToConstant: 40),
+            downloadButton.rightAnchor.constraint(equalTo: self.rightAnchor),
+            downloadButtonCollapsedTopConstraint
         ])
     }
     
@@ -60,8 +60,8 @@ extension MenuView {
         infoButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            infoButton.heightAnchor.constraint(equalToConstant: 30),
-            infoButton.widthAnchor.constraint(equalToConstant: 30),
+            infoButton.heightAnchor.constraint(equalToConstant: 40),
+            infoButton.widthAnchor.constraint(equalToConstant: 40),
             infoButton.rightAnchor.constraint(equalTo: self.rightAnchor),
             infoButtonCollapsedTopConstraint
         ])
