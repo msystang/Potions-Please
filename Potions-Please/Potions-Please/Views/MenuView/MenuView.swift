@@ -58,13 +58,13 @@ class MenuView: UIView {
     }()
     
     lazy var clearButtonOpenedTopConstraint: NSLayoutConstraint = clearButton.topAnchor.constraint(equalTo: menuButton.bottomAnchor, constant: 20)
-    lazy var clearButtonCollapsedTopConstraint: NSLayoutConstraint = clearButton.topAnchor.constraint(equalTo: menuButton.topAnchor)
+    lazy var clearButtonCollapsedTopConstraint: NSLayoutConstraint = clearButton.topAnchor.constraint(equalTo: menuButton.topAnchor, constant: 40)
     
     lazy var downloadButtonOpenedTopConstraint: NSLayoutConstraint = downloadButton.topAnchor.constraint(equalTo: clearButton.bottomAnchor, constant: 20)
-    lazy var downloadButtonCollapsedTopConstraint: NSLayoutConstraint = downloadButton.topAnchor.constraint(equalTo: menuButton.topAnchor)
+    lazy var downloadButtonCollapsedTopConstraint: NSLayoutConstraint = downloadButton.topAnchor.constraint(equalTo: menuButton.topAnchor, constant: 40)
     
     lazy var infoButtonOpenedTopConstraint: NSLayoutConstraint = infoButton.topAnchor.constraint(equalTo: downloadButton.bottomAnchor, constant: 20)
-    lazy var infoButtonCollapsedTopConstraint: NSLayoutConstraint = infoButton.topAnchor.constraint(equalTo: menuButton.topAnchor)
+    lazy var infoButtonCollapsedTopConstraint: NSLayoutConstraint = infoButton.topAnchor.constraint(equalTo: menuButton.topAnchor, constant: 40)
     
     // MARK: - Internal Properties
     var currentMenuViewState: MenuViewState = .collapsed {
