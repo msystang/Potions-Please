@@ -25,6 +25,7 @@ class MenuView: UIView {
     var downloadButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(named: "menu-download-purple"), for: .normal)
+        button.setImage(UIImage(named: "menu-download"), for: .selected)
         button.alpha = 0
         return button
     }()
@@ -52,6 +53,13 @@ class MenuView: UIView {
     lazy var infoButtonOpenedTopConstraint: NSLayoutConstraint = infoButton.topAnchor.constraint(equalTo: menuButton.bottomAnchor, constant: 20)
     lazy var infoButtonCollapsedTopConstraint: NSLayoutConstraint = infoButton.topAnchor.constraint(equalTo: clearButton.topAnchor)
     
+    var currentMenuViewState: MenuViewState = .collapsed {
+        didSet {
+            self.setMenuButtonImage(state: currentMenuViewState)
+            self.updateMenuConstraints(state: currentMenuViewState)
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .gray
@@ -66,6 +74,19 @@ class MenuView: UIView {
     
     
     @objc func menuButtonPressed() {
-        print("pressed")
+        currentMenuViewState = currentMenuViewState == .opened ? .collapsed : .opened
+    }
+    
+    private func setMenuButtonImage(state: MenuViewState) {
+        switch state {
+        case .collapsed:
+            menuButton.setImage(UIImage(named: "menu-purple"), for: .normal)
+        case .opened:
+            menuButton.setImage(UIImage(named: "menu"), for: .normal)
+        }
+    }
+    
+    private func updateMenuConstraints(state: MenuViewState) {
+        
     }
 }
