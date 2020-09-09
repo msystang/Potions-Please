@@ -9,26 +9,44 @@
 import UIKit
 
 extension WardrobeViewController {
-    
-    func addTargetsToMenuButtons() {
-        menuView.clearButton.addTarget(self, action: #selector(showClearAlert), for: .touchUpInside)
-        menuView.downloadButton.addTarget(self, action: #selector(downloadButtonPressed), for: .touchUpInside)
-        menuView.infoButton.addTarget(self, action: #selector(infoButtonPressed), for: .touchUpInside)
-    }
-    
-    func handleClearButtonPressed(action: UIAlertAction) {
-        print("clear")
-        if action.title == "Clear" {
-            dollView.clearDollView()
-        }
+
+    // MARK: - Objective C Methods
+    @objc func clearButtonPressed() {
+        showClearAlert()
     }
     
     @objc func downloadButtonPressed() {
-        print("download")
+        dollViewImage = dollView.asImage()
+        saveImage()
     }
     
     @objc func infoButtonPressed() {
         print("info")
     }
 
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            showSaveImageErrorAlert(error: error)
+        } else {
+            showSaveImageSuccessAlert()
+        }
+    }
+    
+    // MARK: - Internal Methods
+    func addTargetsToMenuButtons() {
+        menuView.clearButton.addTarget(self, action: #selector(clearButtonPressed), for: .touchUpInside)
+        menuView.downloadButton.addTarget(self, action: #selector(downloadButtonPressed), for: .touchUpInside)
+        menuView.infoButton.addTarget(self, action: #selector(infoButtonPressed), for: .touchUpInside)
+    }
+    
+    func handleClearButtonPressed(action: UIAlertAction) {
+        if action.title == "Clear" {
+            dollView.clearDollView()
+        }
+    }
+    
+    func saveImage() {
+        UIImageWriteToSavedPhotosAlbum(dollViewImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+    }
+    
 }
