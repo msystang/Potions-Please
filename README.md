@@ -1,4 +1,3 @@
 # Potions Please: Witch's Wardrobe
-Potions Please: Witch's Wardrobe the App is an iOS mobile dress up game and a spin off of the characters from the board game, [Potions Please](www.ledesignandgames.com/).
 
-More to come!
+Potions Please: Witch's Wardrobe the App is iOS software that brings characters from the board game, [Potions Please](https://www.ledesignandgames.com/) into a mobile “paper-doll” dress-up game where players can mix and match clothing and accessories.
