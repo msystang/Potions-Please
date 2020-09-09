@@ -31,6 +31,7 @@
 		EA94ED8024846F2300FE53FD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94ED7F24846F2300FE53FD /* Item.swift */; };
 		EAA0BAB5250935180043E55F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0BAB4250935180043E55F /* MenuView.swift */; };
 		EAA0BAB72509353C0043E55F /* MenuView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0BAB62509353C0043E55F /* MenuView+Constraints.swift */; };
+		EAA0BABA2509592B0043E55F /* WardrobeViewController+MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0BAB92509592B0043E55F /* WardrobeViewController+MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		EA94ED7F24846F2300FE53FD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EAA0BAB4250935180043E55F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		EAA0BAB62509353C0043E55F /* MenuView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuView+Constraints.swift"; sourceTree = "<group>"; };
+		EAA0BAB92509592B0043E55F /* WardrobeViewController+MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WardrobeViewController+MenuView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				EA940F9B2461DD5500DD4C23 /* WardrobeViewController.swift */,
+				EAA0BAB92509592B0043E55F /* WardrobeViewController+MenuView.swift */,
 				EA940FD02465BD5300DD4C23 /* WardrobeViewController+CollectionViews.swift */,
 				EA940FCE2463804900DD4C23 /* WardrobeViewController+Gestures.swift */,
 				EA940FCC2462156B00DD4C23 /* WardrobeViewController+SliderView.swift */,
@@ -334,6 +337,7 @@
 				EA940FC92461F9AB00DD4C23 /* SliderView.swift in Sources */,
 				EA6FE0DF24BEB0D000EF1D59 /* Category.swift in Sources */,
 				EA489C2D2489946F00CF668B /* ItemType.swift in Sources */,
+				EAA0BABA2509592B0043E55F /* WardrobeViewController+MenuView.swift in Sources */,
 				EA940FDA2465F26800DD4C23 /* DollView.swift in Sources */,
 				EAA0BAB72509353C0043E55F /* MenuView+Constraints.swift in Sources */,
 				EAA0BAB5250935180043E55F /* MenuView.swift in Sources */,
