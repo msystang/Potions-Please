@@ -11,9 +11,10 @@ import UIKit
 class WardrobeViewController: UIViewController {
     
     // MARK: - UI Properties
+    var menuView = MenuView()
+    
     var dollView = DollView()
 
-    
     var gestureView: UIView = {
         let view = UIView()
         return view
@@ -23,7 +24,6 @@ class WardrobeViewController: UIViewController {
         let imageView = UIImageView()
         imageView.isUserInteractionEnabled = true
         imageView.contentMode = .scaleAspectFit
-        //TODO: Make style struct
         imageView.tintColor = UIColor(red: 188/255, green: 175/255, blue: 209/255, alpha: 1)
         return imageView
     }()
@@ -53,18 +53,27 @@ class WardrobeViewController: UIViewController {
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .yellow
         
         addSubviews()
         addConstraints()
         
+        setUpMenuView()
+        setUpSliderView()
+        setUpCollectionViews()
+    }
+    
+    private func setUpMenuView() {
+        addTargetsToMenuButtons()
+    }
+    
+    private func setUpSliderView() {
         setChevronImage(state: currentSliderViewState)
         loadSliderGestures()
-        
-        setUpCollectionView(collectionView: sliderView.categoryCollectionView)
-        setUpCollectionView(collectionView: sliderView.itemCollectionView)
-        
     }
 
+    private func setUpCollectionViews() {
+        setUpCollectionView(collectionView: sliderView.categoryCollectionView)
+        setUpCollectionView(collectionView: sliderView.itemCollectionView)
+    }
 }
 
