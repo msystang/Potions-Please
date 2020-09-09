@@ -10,7 +10,7 @@ import UIKit
 
 extension WardrobeViewController {
     
-    @objc func showClearAlert() {
+    func showClearAlert() {
         let ac = UIAlertController(title: "Are you sure you want to clear your wardrobe?", message: "Pressing 'Clear' will result in the loss of your progress.", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         ac.addAction(UIAlertAction(title: "Clear", style: .destructive, handler: { (action) in
