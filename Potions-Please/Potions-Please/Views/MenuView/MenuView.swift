@@ -9,16 +9,30 @@
 import UIKit
 
 class MenuView: UIView {
-    
+    // MARK: - Enum
     enum MenuViewState {
         case opened
         case collapsed
     }
     
+    // MARK: - UI Properties
     lazy var menuButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(named: "menu-purple"), for: .normal)
+        button.imageEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        button.backgroundColor = UIColor(red: 218/255, green: 214/255, blue: 229/255, alpha: 1)
+        button.layer.cornerRadius = 8
         button.addTarget(self, action: #selector(menuButtonPressed), for: .touchUpInside)
+        return button
+    }()
+    
+    var clearButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(named: "menu-clear-purple"), for: .normal)
+        button.alpha = 0
+        button.imageEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        button.backgroundColor = UIColor(red: 218/255, green: 214/255, blue: 229/255, alpha: 1)
+        button.layer.cornerRadius = 8
         return button
     }()
     
@@ -27,13 +41,9 @@ class MenuView: UIView {
         button.setImage(UIImage(named: "menu-download-purple"), for: .normal)
         button.setImage(UIImage(named: "menu-download"), for: .selected)
         button.alpha = 0
-        return button
-    }()
-    
-    var clearButton: UIButton = {
-        let button = UIButton()
-        button.setImage(UIImage(named: "menu-clear-purple"), for: .normal)
-        button.alpha = 0
+        button.imageEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        button.backgroundColor = UIColor(red: 218/255, green: 214/255, blue: 229/255, alpha: 1)
+        button.layer.cornerRadius = 8
         return button
     }()
     
@@ -64,9 +74,9 @@ class MenuView: UIView {
         }
     }
     
+    // MARK: - Lifecycle Methods
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .gray
         
         addSubviews()
         addConstraints()
