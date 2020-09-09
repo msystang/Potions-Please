@@ -6,4 +6,19 @@
 //  Copyright © 2020 Sunni Tang. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension WardrobeViewController {
+    
+    @objc func clearButtonPressed() {
+        print("clear")
+    }
+    
+    @objc func downloadButtonPressed() {
+        print("download")
+    }
+    
+    @objc func infoButtonPressed() {
+        print("info")
+    }
+}

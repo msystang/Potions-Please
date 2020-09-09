@@ -53,18 +53,30 @@ class WardrobeViewController: UIViewController {
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .yellow
         
         addSubviews()
         addConstraints()
         
-        setChevronImage(state: currentSliderViewState)
-        loadSliderGestures()
-        
-        setUpCollectionView(collectionView: sliderView.categoryCollectionView)
-        setUpCollectionView(collectionView: sliderView.itemCollectionView)
+        setUpMenuView()
+        setUpSliderView()
+        setUpCollectionViews()
         
     }
+    
+    private func setUpMenuView() {
+        menuView.clearButton.addTarget(self, action: #selector(clearButtonPressed), for: .touchUpInside)
+        menuView.downloadButton.addTarget(self, action: #selector(downloadButtonPressed), for: .touchUpInside)
+        menuView.infoButton.addTarget(self, action: #selector(infoButtonPressed), for: .touchUpInside)
+    }
+    
+    private func setUpSliderView() {
+        setChevronImage(state: currentSliderViewState)
+        loadSliderGestures()
+    }
 
+    private func setUpCollectionViews() {
+        setUpCollectionView(collectionView: sliderView.categoryCollectionView)
+        setUpCollectionView(collectionView: sliderView.itemCollectionView)
+    }
 }
 
