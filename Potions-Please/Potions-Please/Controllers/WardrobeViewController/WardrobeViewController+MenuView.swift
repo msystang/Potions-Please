@@ -17,18 +17,31 @@ extension WardrobeViewController {
     }
     
     func handleClearButtonPressed(action: UIAlertAction) {
-        print("clear")
         if action.title == "Clear" {
             dollView.clearDollView()
         }
     }
     
     @objc func downloadButtonPressed() {
-        print("download")
+        dollViewImage = dollView.asImage()
+        saveImage()
     }
     
     @objc func infoButtonPressed() {
         print("info")
     }
 
+    
+    // MARK: - Save Image Functions
+    func saveImage() {
+        UIImageWriteToSavedPhotosAlbum(dollViewImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+    }
+
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            showSaveImageErrorAlert(error: error)
+        } else {
+            showSaveImageSuccessAlert()
+        }
+    }
 }

@@ -50,6 +50,8 @@ class WardrobeViewController: UIViewController {
         }
     }
     
+    var dollViewImage = UIImage()
+    
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
