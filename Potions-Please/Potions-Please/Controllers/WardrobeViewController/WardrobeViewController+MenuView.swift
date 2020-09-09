@@ -21,4 +21,5 @@ extension WardrobeViewController {
     @objc func infoButtonPressed() {
         print("info")
     }
+
 }

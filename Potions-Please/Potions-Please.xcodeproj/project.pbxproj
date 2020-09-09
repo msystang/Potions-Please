@@ -32,6 +32,7 @@
 		EAA0BAB5250935180043E55F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0BAB4250935180043E55F /* MenuView.swift */; };
 		EAA0BAB72509353C0043E55F /* MenuView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0BAB62509353C0043E55F /* MenuView+Constraints.swift */; };
 		EAA0BABA2509592B0043E55F /* WardrobeViewController+MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0BAB92509592B0043E55F /* WardrobeViewController+MenuView.swift */; };
+		EAA0BABC25095ECF0043E55F /* WardrobeViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0BABB25095ECF0043E55F /* WardrobeViewController+Alerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		EAA0BAB4250935180043E55F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		EAA0BAB62509353C0043E55F /* MenuView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuView+Constraints.swift"; sourceTree = "<group>"; };
 		EAA0BAB92509592B0043E55F /* WardrobeViewController+MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WardrobeViewController+MenuView.swift"; sourceTree = "<group>"; };
+		EAA0BABB25095ECF0043E55F /* WardrobeViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WardrobeViewController+Alerts.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				EA940FCE2463804900DD4C23 /* WardrobeViewController+Gestures.swift */,
 				EA940FCC2462156B00DD4C23 /* WardrobeViewController+SliderView.swift */,
 				EA940FB92461E9B800DD4C23 /* WardrobeViewController+Constraints.swift */,
+				EAA0BABB25095ECF0043E55F /* WardrobeViewController+Alerts.swift */,
 			);
 			path = WardrobeViewController;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				EA940F9A2461DD5500DD4C23 /* SceneDelegate.swift in Sources */,
 				EA940FCD2462156B00DD4C23 /* WardrobeViewController+SliderView.swift in Sources */,
 				EA940FBA2461E9B800DD4C23 /* WardrobeViewController+Constraints.swift in Sources */,
+				EAA0BABC25095ECF0043E55F /* WardrobeViewController+Alerts.swift in Sources */,
 				EA940FD12465BD5300DD4C23 /* WardrobeViewController+CollectionViews.swift in Sources */,
 				EA940FDD2465F3D300DD4C23 /* DollView+Constraints.swift in Sources */,
 				EA940FD72465DA9600DD4C23 /* ItemCollectionViewCell.swift in Sources */,
