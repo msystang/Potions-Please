@@ -116,7 +116,7 @@ extension DollView {
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            logoImageView.rightAnchor.constraint(equalTo: self.rightAnchor),
+            logoImageView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),
             logoImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
             logoImageView.widthAnchor.constraint(equalToConstant: 100),
             logoImageView.heightAnchor.constraint(equalToConstant: 90)

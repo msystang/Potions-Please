@@ -16,7 +16,7 @@ extension WardrobeViewController {
     }
     
     @objc func downloadButtonPressed() {
-        dollViewImage = dollView.asImage()
+        prepareImageForDownload()
         saveImage()
     }
     
@@ -43,6 +43,12 @@ extension WardrobeViewController {
         if action.title == "Clear" {
             dollView.clearDollView()
         }
+    }
+    
+    func prepareImageForDownload() {
+        dollView.logoImageView.isHidden = false
+        dollViewImage = dollView.asImage()
+        dollView.logoImageView.isHidden = true
     }
     
     func saveImage() {

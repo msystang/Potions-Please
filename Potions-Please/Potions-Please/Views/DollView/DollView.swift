@@ -58,6 +58,7 @@ class DollView: UIView {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "logo-ww")
         imageView.alpha = 0.7
+        imageView.isHidden = true
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
