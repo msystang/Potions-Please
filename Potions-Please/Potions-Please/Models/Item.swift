@@ -25,9 +25,9 @@ class Item {
     
     static let items: [Item] = [
         // Backgrounds
+        Item(name: "Multi Background", type: .bkgd, image: UIImage(named: "bkgd-multi"), thumbnailImage: UIImage(named: "bkgd-multi")),
         Item(name: "Blue Background", type: .bkgd, image: UIImage(named: "bkgd-blue"), thumbnailImage: UIImage(named: "bkgd-blue")),
         Item(name: "Green Background", type: .bkgd, image: UIImage(named: "bkgd-green"), thumbnailImage: UIImage(named: "bkgd-green")),
-        Item(name: "Multi Background", type: .bkgd, image: UIImage(named: "bkgd-multi"), thumbnailImage: UIImage(named: "bkgd-multi")),
         Item(name: "Pink Background", type: .bkgd, image: UIImage(named: "bkgd-pink"), thumbnailImage: UIImage(named: "bkgd-pink")),
         Item(name: "Purple Background", type: .bkgd, image: UIImage(named: "bkgd-purple"), thumbnailImage: UIImage(named: "bkgd-purple")),
         Item(name: "Blue Potions Background", type: .bkgd, image: UIImage(named: "bkgd-blue-potions"), thumbnailImage: UIImage(named: "bkgd-blue-potions")),
