@@ -54,9 +54,15 @@ class DollView: UIView {
         return imageView
     }()
     
+    var logoImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "base-holly")
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .gray
         
         addSubviews()
         addConstraints()
