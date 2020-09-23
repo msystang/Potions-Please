@@ -21,7 +21,7 @@ extension WardrobeViewController {
     }
     
     @objc func infoButtonPressed() {
-        print("info")
+        openWebsite()
     }
 
     @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
@@ -49,4 +49,9 @@ extension WardrobeViewController {
         UIImageWriteToSavedPhotosAlbum(dollViewImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
     }
     
+    func openWebsite() {
+        if let url = URL(string: "https://www.ledesignandgames.com/") {
+            UIApplication.shared.open(url)
+        }
+    }
 }
