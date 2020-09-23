@@ -18,6 +18,7 @@ extension DollView {
         self.addSubview(bottomImageView)
         self.addSubview(topImageView)
         self.addSubview(onePieceImageView)
+        self.addSubview(logoImageView)
     }
     
     func addConstraints() {
@@ -26,6 +27,7 @@ extension DollView {
         setHatImageViewConstraints()
         setTopImageViewConstraints()
         setBottomImageViewConstraints()
+        setLogoImageViewConstraints()
         
         // Toggle One-piece & top/bottom constraints depending on which is selected
         setOnePieceImageViewConstraints()
@@ -107,6 +109,17 @@ extension DollView {
             shoesImageView.centerYAnchor.constraint(equalTo: baseImageView.centerYAnchor),
             shoesImageView.topAnchor.constraint(equalTo: baseImageView.topAnchor),
             shoesImageView.leftAnchor.constraint(equalTo: baseImageView.leftAnchor)
+        ])
+    }
+    
+    private func setLogoImageViewConstraints() {
+        logoImageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            logoImageView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),
+            logoImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            logoImageView.widthAnchor.constraint(equalToConstant: 100),
+            logoImageView.heightAnchor.constraint(equalToConstant: 90)
         ])
     }
 }
