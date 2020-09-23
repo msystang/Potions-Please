@@ -15,6 +15,7 @@ extension WardrobeViewController {
         self.view.addSubview(sliderView)
         self.view.addSubview(gestureView)
         self.gestureView.addSubview(chevronImageView)
+        self.view.addSubview(menuView)
     }
     
     func addConstraints() {
@@ -22,6 +23,7 @@ extension WardrobeViewController {
         setSliderViewConstraints()
         setGestureViewConstraints()
         setChevronImageViewConstraints()
+        setMenuViewConstraints()
     }
     
     // MARK: - Private Methods
@@ -30,7 +32,7 @@ extension WardrobeViewController {
         
         NSLayoutConstraint.activate([
             dollView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            dollView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            dollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -80),
             dollView.topAnchor.constraint(equalTo: self.view.topAnchor),
             dollView.leftAnchor.constraint(equalTo: self.view.leftAnchor)
         ])
@@ -66,6 +68,17 @@ extension WardrobeViewController {
             chevronImageView.centerYAnchor.constraint(equalTo: gestureView.centerYAnchor),
             chevronImageView.heightAnchor.constraint(equalTo: gestureView.heightAnchor),
             chevronImageView.widthAnchor.constraint(equalTo: gestureView.heightAnchor)
+        ])
+    }
+    
+    private func setMenuViewConstraints() {
+        menuView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            menuView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            menuView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -20),
+            menuView.widthAnchor.constraint(equalToConstant: 50),
+            menuView.heightAnchor.constraint(equalToConstant: 200)
         ])
     }
     

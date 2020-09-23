@@ -12,8 +12,8 @@ class DollView: UIView {
     
     var backgroundImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "bkgd-multi")
         imageView.contentMode = .scaleAspectFill
+        imageView.image = UIImage(named: "bkgd-multi")
         return imageView
     }()
     
@@ -66,10 +66,19 @@ class DollView: UIView {
         
         addSubviews()
         addConstraints()
+        
+        clearDollView()
     }
     
     required init?(coder: NSCoder) {
           fatalError("init(coder:) has not been implemented")
     }
     
+    func clearDollView() {
+        hatImageView.image = nil
+        topImageView.image = nil
+        bottomImageView.image = nil
+        onePieceImageView.image = nil
+        shoesImageView.image = nil
+    }
 }

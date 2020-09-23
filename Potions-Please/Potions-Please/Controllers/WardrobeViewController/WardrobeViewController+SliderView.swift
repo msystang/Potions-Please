@@ -35,12 +35,9 @@ extension WardrobeViewController {
             switch self?.currentSliderViewState {
             case .opened:
                 self?.currentSliderViewState = .partial
-                print("slider is now at half")
             case .partial:
                 self?.currentSliderViewState = .collapsed
-                print("slider is now collapsed")
             case .collapsed:
-                print("slider is already collapsed")
                 return
             default:
                 return
@@ -54,14 +51,11 @@ extension WardrobeViewController {
             
             switch self?.currentSliderViewState {
             case .opened:
-                print("slider is already opened")
                 return
             case .partial:
                 self?.currentSliderViewState = .opened
-                print("slider is now opened")
             case .collapsed:
                 self?.currentSliderViewState = .partial
-                print("slider is half opened")
             default:
                 return
             }
@@ -70,8 +64,20 @@ extension WardrobeViewController {
     }
     
     func tapped(for state: SliderViewState) {
-        // TODO: Switch between states
-        // TODO: rename half to partial state
+        UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: 0.80, initialSpringVelocity: 0, options: .curveEaseInOut, animations: { [weak self] in
+            
+            switch self?.currentSliderViewState {
+            case .opened:
+                self?.currentSliderViewState = .partial
+            case .partial:
+                self?.currentSliderViewState = .collapsed
+            case .collapsed:
+                self?.currentSliderViewState = .partial
+            default:
+                return
+            }
+            
+        }, completion: nil)
     }
     
     

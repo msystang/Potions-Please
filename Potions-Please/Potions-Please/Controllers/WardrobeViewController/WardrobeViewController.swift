@@ -11,9 +11,10 @@ import UIKit
 class WardrobeViewController: UIViewController {
     
     // MARK: - UI Properties
+    var menuView = MenuView()
+    
     var dollView = DollView()
 
-    
     var gestureView: UIView = {
         let view = UIView()
         return view
@@ -23,16 +24,15 @@ class WardrobeViewController: UIViewController {
         let imageView = UIImageView()
         imageView.isUserInteractionEnabled = true
         imageView.contentMode = .scaleAspectFit
-        //TODO: Make style struct
         imageView.tintColor = UIColor(red: 188/255, green: 175/255, blue: 209/255, alpha: 1)
         return imageView
     }()
     
     var sliderView = SliderView()
     
-    lazy var sliderOpenedHeightConstraint: NSLayoutConstraint = sliderView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.8)
-    lazy var sliderPartialHeightConstraint:NSLayoutConstraint = sliderView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3)
-    lazy var sliderCollapsedHeightConstraint:NSLayoutConstraint = sliderView.heightAnchor.constraint(equalToConstant: 50)
+    lazy var sliderOpenedHeightConstraint: NSLayoutConstraint = sliderView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.65)
+    lazy var sliderPartialHeightConstraint:NSLayoutConstraint = sliderView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.27)
+    lazy var sliderCollapsedHeightConstraint:NSLayoutConstraint = sliderView.heightAnchor.constraint(equalToConstant: 90)
     
     // MARK: - Internal Properties
     var currentSliderViewState: SliderViewState = .partial {
@@ -50,21 +50,32 @@ class WardrobeViewController: UIViewController {
         }
     }
     
+    var dollViewImage = UIImage()
+    
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .yellow
         
         addSubviews()
         addConstraints()
         
+        setUpMenuView()
+        setUpSliderView()
+        setUpCollectionViews()
+    }
+    
+    private func setUpMenuView() {
+        addTargetsToMenuButtons()
+    }
+    
+    private func setUpSliderView() {
         setChevronImage(state: currentSliderViewState)
         loadSliderGestures()
-        
-        setUpCollectionView(collectionView: sliderView.categoryCollectionView)
-        setUpCollectionView(collectionView: sliderView.itemCollectionView)
-        
     }
 
+    private func setUpCollectionViews() {
+        setUpCollectionView(collectionView: sliderView.categoryCollectionView)
+        setUpCollectionView(collectionView: sliderView.itemCollectionView)
+    }
 }
 

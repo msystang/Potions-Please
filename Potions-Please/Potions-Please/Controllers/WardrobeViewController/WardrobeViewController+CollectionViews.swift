@@ -77,6 +77,9 @@ extension WardrobeViewController: UICollectionViewDataSource {
                         items = Item.items.filter({ $0.image != nil })
                 }
             
+                if currentSliderViewState == .collapsed {
+                    self.tapped(for: currentSliderViewState)
+                }
             
             case sliderView.itemCollectionView:
                 let item = items[indexPath.row]
@@ -120,9 +123,9 @@ extension WardrobeViewController: UICollectionViewDelegateFlowLayout {
         
         switch collectionView {
         case sliderView.categoryCollectionView:
-            layout.sectionInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5)
+            layout.sectionInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 10)
             layout.minimumInteritemSpacing = 5
-            return CGSize(width: 40, height: 40)
+            return CGSize(width: collectionView.frame.height - 10, height: collectionView.frame.height - 10)
         case sliderView.itemCollectionView:
             layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
             layout.minimumInteritemSpacing = 10
