@@ -285,7 +285,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "Sunni Tang";
+				ORGANIZATIONNAME = "Laura Erwin Design and Games";
 				TargetAttributes = {
 					EA940F932461DD5500DD4C23 = {
 						CreatedOnToolsVersion = 11.3;
@@ -296,7 +296,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EA940F8F2461DD5500DD4C23 /* Build configuration list for PBXProject "Potions-Please" */;
+			buildConfigurationList = EA940F8F2461DD5500DD4C23 /* Build configuration list for PBXProject "Witch's Wardrobe" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -593,7 +593,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EA940F8F2461DD5500DD4C23 /* Build configuration list for PBXProject "Potions-Please" */ = {
+		EA940F8F2461DD5500DD4C23 /* Build configuration list for PBXProject "Witch's Wardrobe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA940FB12461DD5600DD4C23 /* Debug */,
