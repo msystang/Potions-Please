@@ -49,7 +49,7 @@
 /* Begin PBXFileReference section */
 		EA489C2C2489946F00CF668B /* ItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
 		EA6FE0DE24BEB0D000EF1D59 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		EA940F942461DD5500DD4C23 /* Potions-Please.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Potions-Please.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA940F942461DD5500DD4C23 /* Witch's Wardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Witch's Wardrobe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA940F972461DD5500DD4C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA940F992461DD5500DD4C23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EA940F9B2461DD5500DD4C23 /* WardrobeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		EA940F952461DD5500DD4C23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EA940F942461DD5500DD4C23 /* Potions-Please.app */,
+				EA940F942461DD5500DD4C23 /* Witch's Wardrobe.app */,
 				EA940FAA2461DD5600DD4C23 /* Witch's Wardrobe.xctest */,
 			);
 			name = Products;
@@ -256,7 +256,7 @@
 			);
 			name = "Potions-Please";
 			productName = "Potions-Please";
-			productReference = EA940F942461DD5500DD4C23 /* Potions-Please.app */;
+			productReference = EA940F942461DD5500DD4C23 /* Witch's Wardrobe.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EA940FA92461DD5600DD4C23 /* Potions-PleaseTests */ = {
@@ -522,7 +522,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ledg.witcheswardrobe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Witch's Wardrobe";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -540,7 +540,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ledg.witcheswardrobe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Witch's Wardrobe";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
