@@ -242,9 +242,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EA940F932461DD5500DD4C23 /* Potions-Please */ = {
+		EA940F932461DD5500DD4C23 /* Witch's Wardrobe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA940FB32461DD5600DD4C23 /* Build configuration list for PBXNativeTarget "Potions-Please" */;
+			buildConfigurationList = EA940FB32461DD5600DD4C23 /* Build configuration list for PBXNativeTarget "Witch's Wardrobe" */;
 			buildPhases = (
 				EA940F902461DD5500DD4C23 /* Sources */,
 				EA940F912461DD5500DD4C23 /* Frameworks */,
@@ -254,14 +254,14 @@
 			);
 			dependencies = (
 			);
-			name = "Potions-Please";
+			name = "Witch's Wardrobe";
 			productName = "Potions-Please";
 			productReference = EA940F942461DD5500DD4C23 /* Witch's Wardrobe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EA940FA92461DD5600DD4C23 /* Potions-PleaseTests */ = {
+		EA940FA92461DD5600DD4C23 /* Witch's WardrobeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA940FB62461DD5600DD4C23 /* Build configuration list for PBXNativeTarget "Potions-PleaseTests" */;
+			buildConfigurationList = EA940FB62461DD5600DD4C23 /* Build configuration list for PBXNativeTarget "Witch's WardrobeTests" */;
 			buildPhases = (
 				EA940FA62461DD5600DD4C23 /* Sources */,
 				EA940FA72461DD5600DD4C23 /* Frameworks */,
@@ -272,7 +272,7 @@
 			dependencies = (
 				EA940FAC2461DD5600DD4C23 /* PBXTargetDependency */,
 			);
-			name = "Potions-PleaseTests";
+			name = "Witch's WardrobeTests";
 			productName = "Potions-PleaseTests";
 			productReference = EA940FAA2461DD5600DD4C23 /* Witch's Wardrobe.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -309,8 +309,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EA940F932461DD5500DD4C23 /* Potions-Please */,
-				EA940FA92461DD5600DD4C23 /* Potions-PleaseTests */,
+				EA940F932461DD5500DD4C23 /* Witch's Wardrobe */,
+				EA940FA92461DD5600DD4C23 /* Witch's WardrobeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -379,7 +379,7 @@
 /* Begin PBXTargetDependency section */
 		EA940FAC2461DD5600DD4C23 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EA940F932461DD5500DD4C23 /* Potions-Please */;
+			target = EA940F932461DD5500DD4C23 /* Witch's Wardrobe */;
 			targetProxy = EA940FAB2461DD5600DD4C23 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -521,7 +521,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ledg.witcheswardrobe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledg.witchswardrobe;
 				PRODUCT_NAME = "Witch's Wardrobe";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -539,7 +539,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ledg.witcheswardrobe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledg.witchswardrobe;
 				PRODUCT_NAME = "Witch's Wardrobe";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -553,14 +553,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94MQ8KPB58;
-				INFOPLIST_FILE = "Potions-PleaseTests/Info.plist";
+				INFOPLIST_FILE = "Witch's WardrobeTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Sunni-Tang.Potions-PleaseTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledg.witchswardrobe;
 				PRODUCT_NAME = "Witch's Wardrobe";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -575,14 +575,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94MQ8KPB58;
-				INFOPLIST_FILE = "Potions-PleaseTests/Info.plist";
+				INFOPLIST_FILE = "Witch's WardrobeTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Sunni-Tang.Potions-PleaseTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledg.witchswardrobe;
 				PRODUCT_NAME = "Witch's Wardrobe";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -602,7 +602,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA940FB32461DD5600DD4C23 /* Build configuration list for PBXNativeTarget "Potions-Please" */ = {
+		EA940FB32461DD5600DD4C23 /* Build configuration list for PBXNativeTarget "Witch's Wardrobe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA940FB42461DD5600DD4C23 /* Debug */,
@@ -611,7 +611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA940FB62461DD5600DD4C23 /* Build configuration list for PBXNativeTarget "Potions-PleaseTests" */ = {
+		EA940FB62461DD5600DD4C23 /* Build configuration list for PBXNativeTarget "Witch's WardrobeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA940FB72461DD5600DD4C23 /* Debug */,
