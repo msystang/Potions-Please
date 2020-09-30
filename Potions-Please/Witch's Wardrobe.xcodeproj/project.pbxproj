@@ -14,7 +14,7 @@
 		EA940F9C2461DD5500DD4C23 /* WardrobeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940F9B2461DD5500DD4C23 /* WardrobeViewController.swift */; };
 		EA940FA12461DD5600DD4C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA940FA02461DD5600DD4C23 /* Assets.xcassets */; };
 		EA940FA42461DD5600DD4C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA940FA22461DD5600DD4C23 /* LaunchScreen.storyboard */; };
-		EA940FAF2461DD5600DD4C23 /* Potions_PleaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FAE2461DD5600DD4C23 /* Potions_PleaseTests.swift */; };
+		EA940FAF2461DD5600DD4C23 /* WitchsWardrobeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FAE2461DD5600DD4C23 /* WitchsWardrobeTests.swift */; };
 		EA940FBA2461E9B800DD4C23 /* WardrobeViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FB92461E9B800DD4C23 /* WardrobeViewController+Constraints.swift */; };
 		EA940FC22461F30F00DD4C23 /* PPTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FC12461F30F00DD4C23 /* PPTabBarController.swift */; };
 		EA940FC52461F39400DD4C23 /* SelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA940FC42461F39400DD4C23 /* SelfieViewController.swift */; };
@@ -49,15 +49,15 @@
 /* Begin PBXFileReference section */
 		EA489C2C2489946F00CF668B /* ItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
 		EA6FE0DE24BEB0D000EF1D59 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		EA940F942461DD5500DD4C23 /* Potions-Please.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Potions-Please.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA940F942461DD5500DD4C23 /* Witch's Wardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Witch's Wardrobe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA940F972461DD5500DD4C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA940F992461DD5500DD4C23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EA940F9B2461DD5500DD4C23 /* WardrobeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeViewController.swift; sourceTree = "<group>"; };
 		EA940FA02461DD5600DD4C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA940FA32461DD5600DD4C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA940FA52461DD5600DD4C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA940FAA2461DD5600DD4C23 /* Potions-PleaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Potions-PleaseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA940FAE2461DD5600DD4C23 /* Potions_PleaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potions_PleaseTests.swift; sourceTree = "<group>"; };
+		EA940FAA2461DD5600DD4C23 /* Witch's Wardrobe.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Witch's Wardrobe.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA940FAE2461DD5600DD4C23 /* WitchsWardrobeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchsWardrobeTests.swift; sourceTree = "<group>"; };
 		EA940FB02461DD5600DD4C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA940FB92461E9B800DD4C23 /* WardrobeViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WardrobeViewController+Constraints.swift"; sourceTree = "<group>"; };
 		EA940FC12461F30F00DD4C23 /* PPTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPTabBarController.swift; sourceTree = "<group>"; };
@@ -101,8 +101,8 @@
 		EA940F8B2461DD5500DD4C23 = {
 			isa = PBXGroup;
 			children = (
-				EA940F962461DD5500DD4C23 /* Potions-Please */,
-				EA940FAD2461DD5600DD4C23 /* Potions-PleaseTests */,
+				EA940F962461DD5500DD4C23 /* Witch's Wardrobe */,
+				EA940FAD2461DD5600DD4C23 /* Witch's WardrobeTests */,
 				EA940F952461DD5500DD4C23 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,13 +110,13 @@
 		EA940F952461DD5500DD4C23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EA940F942461DD5500DD4C23 /* Potions-Please.app */,
-				EA940FAA2461DD5600DD4C23 /* Potions-PleaseTests.xctest */,
+				EA940F942461DD5500DD4C23 /* Witch's Wardrobe.app */,
+				EA940FAA2461DD5600DD4C23 /* Witch's Wardrobe.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EA940F962461DD5500DD4C23 /* Potions-Please */ = {
+		EA940F962461DD5500DD4C23 /* Witch's Wardrobe */ = {
 			isa = PBXGroup;
 			children = (
 				EA940FC02461F22200DD4C23 /* App Lifecycle */,
@@ -126,16 +126,16 @@
 				EA940FBF2461F21600DD4C23 /* Supporting Files */,
 				EA940FA52461DD5600DD4C23 /* Info.plist */,
 			);
-			path = "Potions-Please";
+			path = "Witch's Wardrobe";
 			sourceTree = "<group>";
 		};
-		EA940FAD2461DD5600DD4C23 /* Potions-PleaseTests */ = {
+		EA940FAD2461DD5600DD4C23 /* Witch's WardrobeTests */ = {
 			isa = PBXGroup;
 			children = (
-				EA940FAE2461DD5600DD4C23 /* Potions_PleaseTests.swift */,
+				EA940FAE2461DD5600DD4C23 /* WitchsWardrobeTests.swift */,
 				EA940FB02461DD5600DD4C23 /* Info.plist */,
 			);
-			path = "Potions-PleaseTests";
+			path = "Witch's WardrobeTests";
 			sourceTree = "<group>";
 		};
 		EA940FBB2461F1ED00DD4C23 /* WardrobeViewController */ = {
@@ -256,7 +256,7 @@
 			);
 			name = "Potions-Please";
 			productName = "Potions-Please";
-			productReference = EA940F942461DD5500DD4C23 /* Potions-Please.app */;
+			productReference = EA940F942461DD5500DD4C23 /* Witch's Wardrobe.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EA940FA92461DD5600DD4C23 /* Potions-PleaseTests */ = {
@@ -274,7 +274,7 @@
 			);
 			name = "Potions-PleaseTests";
 			productName = "Potions-PleaseTests";
-			productReference = EA940FAA2461DD5600DD4C23 /* Potions-PleaseTests.xctest */;
+			productReference = EA940FAA2461DD5600DD4C23 /* Witch's Wardrobe.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -285,7 +285,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "Sunni Tang";
+				ORGANIZATIONNAME = "Laura Erwin Design and Games";
 				TargetAttributes = {
 					EA940F932461DD5500DD4C23 = {
 						CreatedOnToolsVersion = 11.3;
@@ -296,7 +296,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EA940F8F2461DD5500DD4C23 /* Build configuration list for PBXProject "Potions-Please" */;
+			buildConfigurationList = EA940F8F2461DD5500DD4C23 /* Build configuration list for PBXProject "Witch's Wardrobe" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -370,7 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA940FAF2461DD5600DD4C23 /* Potions_PleaseTests.swift in Sources */,
+				EA940FAF2461DD5600DD4C23 /* WitchsWardrobeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,13 +516,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94MQ8KPB58;
-				INFOPLIST_FILE = "Potions-Please/Info.plist";
+				INFOPLIST_FILE = "Witch's Wardrobe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Sunni-Tang.Potions-Please";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledg.witcheswardrobe;
+				PRODUCT_NAME = "Witch's Wardrobe";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -534,13 +534,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94MQ8KPB58;
-				INFOPLIST_FILE = "Potions-Please/Info.plist";
+				INFOPLIST_FILE = "Witch's Wardrobe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Sunni-Tang.Potions-Please";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledg.witcheswardrobe;
+				PRODUCT_NAME = "Witch's Wardrobe";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -561,7 +561,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Sunni-Tang.Potions-PleaseTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Witch's Wardrobe";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Potions-Please.app/Potions-Please";
@@ -583,7 +583,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Sunni-Tang.Potions-PleaseTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Witch's Wardrobe";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Potions-Please.app/Potions-Please";
@@ -593,7 +593,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EA940F8F2461DD5500DD4C23 /* Build configuration list for PBXProject "Potions-Please" */ = {
+		EA940F8F2461DD5500DD4C23 /* Build configuration list for PBXProject "Witch's Wardrobe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA940FB12461DD5600DD4C23 /* Debug */,
